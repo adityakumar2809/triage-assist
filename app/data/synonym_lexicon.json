@@ -1,0 +1,293 @@
+{
+  "source": "design_reference/design-bible.md \u00a714.2",
+  "entries": [
+    {
+      "phrase": "achy joints",
+      "canonical_targets": [
+        "joint_pain"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": false
+    },
+    {
+      "phrase": "bad cough",
+      "canonical_targets": [
+        "cough"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": false
+    },
+    {
+      "phrase": "being sick",
+      "canonical_targets": [
+        "vomiting"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": false
+    },
+    {
+      "phrase": "belly ache",
+      "canonical_targets": [
+        "abdominal_pain",
+        "stomach_pain"
+      ],
+      "confirmation_bucket": "unsure",
+      "red_flag_related": false
+    },
+    {
+      "phrase": "breathless",
+      "canonical_targets": [
+        "breathlessness"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": true
+    },
+    {
+      "phrase": "burning when i pee",
+      "canonical_targets": [
+        "burning_micturition"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": false
+    },
+    {
+      "phrase": "can't catch my breath",
+      "canonical_targets": [
+        "breathlessness"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": true
+    },
+    {
+      "phrase": "can't sleep",
+      "canonical_targets": [
+        "restlessness"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": false
+    },
+    {
+      "phrase": "can't stop coughing",
+      "canonical_targets": [
+        "cough"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": false
+    },
+    {
+      "phrase": "dizzy",
+      "canonical_targets": [
+        "dizziness",
+        "spinning_movements"
+      ],
+      "confirmation_bucket": "unsure",
+      "red_flag_related": true
+    },
+    {
+      "phrase": "fever",
+      "canonical_targets": [
+        "high_fever"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": true
+    },
+    {
+      "phrase": "feverish",
+      "canonical_targets": [
+        "high_fever"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": true
+    },
+    {
+      "phrase": "head spinning",
+      "canonical_targets": [
+        "dizziness",
+        "spinning_movements"
+      ],
+      "confirmation_bucket": "unsure",
+      "red_flag_related": true
+    },
+    {
+      "phrase": "high temperature",
+      "canonical_targets": [
+        "high_fever"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": true
+    },
+    {
+      "phrase": "itching all over",
+      "canonical_targets": [
+        "itching"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": false
+    },
+    {
+      "phrase": "itchy skin",
+      "canonical_targets": [
+        "itching"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": false
+    },
+    {
+      "phrase": "itch",
+      "canonical_targets": [
+        "itching"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": false
+    },
+    {
+      "phrase": "joints hurt",
+      "canonical_targets": [
+        "joint_pain"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": false
+    },
+    {
+      "phrase": "light-headed",
+      "canonical_targets": [
+        "dizziness",
+        "spinning_movements"
+      ],
+      "confirmation_bucket": "unsure",
+      "red_flag_related": true
+    },
+    {
+      "phrase": "loose motions",
+      "canonical_targets": [
+        "diarrhoea"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": false
+    },
+    {
+      "phrase": "loose stools",
+      "canonical_targets": [
+        "diarrhoea"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": false
+    },
+    {
+      "phrase": "peeing a lot",
+      "canonical_targets": [
+        "polyuria"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": false
+    },
+    {
+      "phrase": "puking",
+      "canonical_targets": [
+        "vomiting"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": false
+    },
+    {
+      "phrase": "shiver",
+      "canonical_targets": [
+        "shivering"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": false
+    },
+    {
+      "phrase": "sweat",
+      "canonical_targets": [
+        "sweating"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": false
+    },
+    {
+      "phrase": "bruis",
+      "canonical_targets": [
+        "bruising"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": false
+    },
+    {
+      "phrase": "vomit",
+      "canonical_targets": [
+        "vomiting"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": false
+    },
+    {
+      "phrase": "restless",
+      "canonical_targets": [
+        "restlessness"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": false
+    },
+    {
+      "phrase": "runny nose",
+      "canonical_targets": [
+        "congestion",
+        "runny_nose"
+      ],
+      "confirmation_bucket": "unsure",
+      "red_flag_related": false
+    },
+    {
+      "phrase": "short of breath",
+      "canonical_targets": [
+        "breathlessness"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": true
+    },
+    {
+      "phrase": "stomach ache",
+      "canonical_targets": [
+        "abdominal_pain",
+        "stomach_pain"
+      ],
+      "confirmation_bucket": "unsure",
+      "red_flag_related": false
+    },
+    {
+      "phrase": "stuffy nose",
+      "canonical_targets": [
+        "congestion",
+        "runny_nose"
+      ],
+      "confirmation_bucket": "unsure",
+      "red_flag_related": false
+    },
+    {
+      "phrase": "the runs",
+      "canonical_targets": [
+        "diarrhoea"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": false
+    },
+    {
+      "phrase": "throwing up",
+      "canonical_targets": [
+        "vomiting"
+      ],
+      "confirmation_bucket": "understood",
+      "red_flag_related": false
+    },
+    {
+      "phrase": "tummy ache",
+      "canonical_targets": [
+        "abdominal_pain",
+        "stomach_pain"
+      ],
+      "confirmation_bucket": "unsure",
+      "red_flag_related": false
+    }
+  ]
+}

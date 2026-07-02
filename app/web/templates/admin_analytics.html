@@ -1,0 +1,199 @@
+{% extends "base.html" %}
+
+{% block title %}Triage Assist - Admin Analytics{% endblock %}
+{% block body_class %}page-admin{% endblock %}
+
+{% block content %}
+  <section class="card stack-sm">
+    <h1>Admin analytics dashboard</h1>
+    <p class="helper-text">
+      Aggregate, non-identifying analytics only. No per-session probabilities
+      are shown.
+    </p>
+  </section>
+
+  <section class="card stack-sm">
+    <h2>Counts</h2>
+    <div class="stats-grid">
+      <article class="stat-card">
+        <h3>Total screenings</h3>
+        <p class="stat-value">{{ analytics.total_screenings }}</p>
+      </article>
+      <article class="stat-card">
+        <h3>Model-scored screenings</h3>
+        <p class="stat-value">{{ analytics.confidence_summary.scored_count }}</p>
+      </article>
+      <article class="stat-card">
+        <h3>Average model confidence (aggregate)</h3>
+        <p class="stat-value">
+          {{ analytics.confidence_summary.average_confidence }}
+        </p>
+      </article>
+    </div>
+  </section>
+
+  {% if analytics.urgency_distribution %}
+    {% set urgency_max = analytics.urgency_distribution
+      | map(attribute='count')
+      | max %}
+  {% else %}
+    {% set urgency_max = 1 %}
+  {% endif %}
+  <section class="card stack-sm">
+    <h2>Urgency distribution</h2>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Urgency</th>
+          <th>Count</th>
+          <th>Distribution</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in analytics.urgency_distribution %}
+          <tr>
+            <td>
+              <span class="urgency-badge urgency-badge-inline urgency-{{ item.urgency }}">
+                {{ item.urgency|humanize_label }}
+              </span>
+            </td>
+            <td>{{ item.count }}</td>
+            <td>
+              <div class="meter">
+                <span
+                  style="width: {{ (item.count * 100 / urgency_max)|round(0, 'ceil') }}%;"
+                ></span>
+              </div>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+
+  {% if analytics.common_symptoms %}
+    {% set symptom_max = analytics.common_symptoms | map(attribute='count') | max %}
+  {% else %}
+    {% set symptom_max = 1 %}
+  {% endif %}
+  <section class="card stack-sm">
+    <h2>Common symptoms</h2>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Symptom</th>
+          <th>Count</th>
+          <th>Distribution</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in analytics.common_symptoms %}
+          <tr>
+            <td>{{ item.symptom|humanize_label }}</td>
+            <td>{{ item.count }}</td>
+            <td>
+              <div class="meter">
+                <span
+                  style="width: {{ (item.count * 100 / symptom_max)|round(0, 'ceil') }}%;"
+                ></span>
+              </div>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+
+  {% if analytics.frequent_categories %}
+    {% set category_max = analytics.frequent_categories
+      | map(attribute='count')
+      | max %}
+  {% else %}
+    {% set category_max = 1 %}
+  {% endif %}
+  <section class="card stack-sm">
+    <h2>Frequent categories</h2>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Category</th>
+          <th>Count</th>
+          <th>Distribution</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in analytics.frequent_categories %}
+          <tr>
+            <td>{{ item.category|humanize_label }}</td>
+            <td>{{ item.count }}</td>
+            <td>
+              <div class="meter">
+                <span
+                  style="width: {{ (item.count * 100 / category_max)|round(0, 'ceil') }}%;"
+                ></span>
+              </div>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+
+  {% if analytics.daily_counts %}
+    {% set daily_max = analytics.daily_counts | map(attribute='count') | max %}
+  {% else %}
+    {% set daily_max = 1 %}
+  {% endif %}
+  <section class="card stack-sm">
+    <h2>Screenings over time</h2>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Date (UTC)</th>
+          <th>Count</th>
+          <th>Distribution</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for item in analytics.daily_counts %}
+          <tr>
+            <td>{{ item.date }}</td>
+            <td>{{ item.count }}</td>
+            <td>
+              <div class="meter">
+                <span
+                  style="width: {{ (item.count * 100 / daily_max)|round(0, 'ceil') }}%;"
+                ></span>
+              </div>
+            </td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+
+  {% set model_metrics = analytics.model_performance.metrics %}
+  <section class="card stack-sm">
+    <h2>Model-performance summary</h2>
+    <p>
+      <strong>Selected model:</strong>
+      {{ analytics.model_performance.selected_model_name }}
+    </p>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for name, value in model_metrics.items() %}
+          <tr>
+            <td>{{ name|humanize_label }}</td>
+            <td>{{ value }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </section>
+{% endblock %}

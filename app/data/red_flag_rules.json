@@ -1,0 +1,60 @@
+{
+  "source": "design_reference/design-bible.md \u00a712.3",
+  "solo_triggers": [
+    "chest_pain",
+    "breathlessness",
+    "weakness_of_one_body_side",
+    "slurred_speech",
+    "altered_sensorium",
+    "coma",
+    "blood_in_sputum",
+    "bloody_stool",
+    "stomach_bleeding",
+    "acute_liver_failure",
+    "fluid_overload"
+  ],
+  "combination_trigger_symptoms": [
+    "fast_heart_rate",
+    "palpitations",
+    "sweating",
+    "loss_of_balance",
+    "unsteadiness",
+    "dizziness",
+    "stiff_neck",
+    "high_fever",
+    "drying_and_tingling_lips",
+    "red_spots_over_body",
+    "puffy_face_and_eyes",
+    "swollen_extremities"
+  ],
+  "anaphylaxis_swelling_cues": [
+    "puffy_face_and_eyes",
+    "swollen_extremities"
+  ],
+  "combination_rules": [
+    {
+      "id": "CR1",
+      "rule": "Any one combination-trigger symptom **+ any one solo red flag**",
+      "cluster": "General escalation (e.g. sweating + chest_pain \u2192 cardiac)"
+    },
+    {
+      "id": "CR2",
+      "rule": "**Two or more** combination-trigger symptoms co-occurring",
+      "cluster": "Multi-cue escalation (e.g. fast_heart_rate + sweating; palpitations + dizziness)"
+    },
+    {
+      "id": "CR3",
+      "rule": "`stiff_neck` **+** `high_fever` (with or without `altered_sensorium` / `red_spots_over_body`)",
+      "cluster": "**Meningitis\u2013sepsis cluster**"
+    },
+    {
+      "id": "CR4",
+      "rule": "`drying_and_tingling_lips` **+** (`breathlessness` OR any **swelling-cue**)",
+      "cluster": "**Anaphylaxis / airway cluster**"
+    }
+  ],
+  "audit_only_solo_triggers": [
+    "acute_liver_failure",
+    "fluid_overload"
+  ]
+}

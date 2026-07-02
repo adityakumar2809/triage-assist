@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{% block title %}Triage Assist{% endblock %}</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='styles.css') }}"
+    >
+  </head>
+  <body class="{% block body_class %}{% endblock %}">
+    <header class="app-header">
+      <div class="layout-shell app-header__content">
+        <a class="app-title" href="/">
+          <span class="app-title__logo" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="28" height="28" role="img">
+              <path
+                d="M12 2L4 5v6c0 5.55 3.84 10.74 8 12 4.16-1.26 8-6.45 8-12V5l-8-3z"
+                fill="var(--color-primary)"
+                opacity="0.15"
+              ></path>
+              <path
+                d="M12 2L4 5v6c0 5.55 3.84 10.74 8 12 4.16-1.26 8-6.45 8-12V5l-8-3z"
+                fill="none"
+                stroke="var(--color-primary)"
+                stroke-width="1.5"
+              ></path>
+              <path
+                d="M11 8h2v3h3v2h-3v3h-2v-3H8v-2h3z"
+                fill="var(--color-primary)"
+              ></path>
+            </svg>
+          </span>
+          <span class="app-title__text app-title__text--full">
+            AI-Based Preliminary Health Screening &amp; Specialist
+            Recommendation System
+          </span>
+          <span class="app-title__text app-title__text--short">
+            Health Screening System
+          </span>
+        </a>
+      </div>
+    </header>
+
+    <main class="layout-shell page-content stack-lg">
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="app-footer">
+      <div class="layout-shell app-footer__content">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <p class="footer-label">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3z"
+                ></path>
+                <path
+                  d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82z"
+                ></path>
+              </svg>
+              Project
+            </p>
+            <p>Major Project for A-Level Certification</p>
+          </div>
+          <div class="footer-col">
+            <p class="footer-label">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <path
+                  d="M4 21V6h7V3h2v3h7v15H4zm2-2h3v-3H6v3zm0-5h3v-3H6v3zm5 5h2v-3h-2v3zm0-5h2v-3h-2v3zm5 5h3v-3h-3v3zm0-5h3v-3h-3v3z"
+                ></path>
+              </svg>
+              Institute
+            </p>
+            <p>NIELIT Delhi</p>
+          </div>
+          <div class="footer-col">
+            <p class="footer-label">
+              <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                <circle cx="12" cy="8" r="4"></circle>
+                <path
+                  d="M12 14c-4.42 0-8 1.79-8 4v2h16v-2c0-2.21-3.58-4-8-4z"
+                ></path>
+              </svg>
+              Author
+            </p>
+            <p>Aditya Kumar Singh</p>
+          </div>
+        </div>
+        <p class="footer-disclaimer">
+          Demonstration project only — not for real-world medical use. Built
+          with Python, Flask &amp; scikit-learn (classical ML, no LLMs).
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="{{ url_for('static', filename='app.js') }}"
+      defer
+    ></script>
+  </body>
+</html>

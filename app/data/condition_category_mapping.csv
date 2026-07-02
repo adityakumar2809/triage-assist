@@ -1,0 +1,42 @@
+raw_label,condition_category
+Fungal Infection,Skin & Allergic
+Allergy,Skin & Allergic
+Drug Reaction,Skin & Allergic
+Acne,Skin & Allergic
+Psoriasis,Skin & Allergic
+Impetigo,Skin & Allergic
+GERD,Gastrointestinal
+Peptic Ulcer Disease,Gastrointestinal
+Gastroenteritis,Gastrointestinal
+Dimorphic Hemorrhoids (piles),Gastrointestinal
+Chronic Cholestasis,Liver & Hepatic
+Jaundice,Liver & Hepatic
+Hepatitis A,Liver & Hepatic
+Hepatitis B,Liver & Hepatic
+Hepatitis C,Liver & Hepatic
+Hepatitis D,Liver & Hepatic
+Hepatitis E,Liver & Hepatic
+Alcoholic Hepatitis,Liver & Hepatic
+AIDS,Infectious & Febrile
+Malaria,Infectious & Febrile
+Chickenpox,Infectious & Febrile
+Dengue,Infectious & Febrile
+Typhoid,Infectious & Febrile
+Bronchial Asthma,Respiratory
+Tuberculosis,Respiratory
+Common Cold,Respiratory
+Pneumonia,Respiratory
+Hypertension,Cardiovascular
+Heart Attack,Cardiovascular
+Varicose Veins,Cardiovascular
+Migraine,Neurological
+Paralysis (brain hemorrhage),Neurological
+Vertigo,Neurological
+Diabetes,Endocrine & Metabolic
+Hypothyroidism,Endocrine & Metabolic
+Hyperthyroidism,Endocrine & Metabolic
+Hypoglycemia,Endocrine & Metabolic
+Cervical Spondylosis,Musculoskeletal
+Osteoarthritis,Musculoskeletal
+Arthritis,Musculoskeletal
+Urinary Tract Infection,Urological

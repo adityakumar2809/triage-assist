@@ -1,0 +1,6 @@
+[2026-06-19T18:51:06.479165+00:00] Capturing intake desktop states
+[2026-06-19T18:51:10.891910+00:00] Capturing confirmation state
+[2026-06-19T18:51:14.295884+00:00] Capturing result states
+[2026-06-19T18:51:29.638813+00:00] Capturing history, admin, summary, and print views
+[2026-06-19T18:51:32.792590+00:00] Capturing mobile intake and result
+[2026-06-19T18:51:35.596649+00:00] Playwright evidence capture complete

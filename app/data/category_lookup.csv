@@ -1,0 +1,11 @@
+condition_category,safe_display_phrasing,point_of_care,point_of_care_note,severity_tier,severity_tier_label
+Skin & Allergic,Skin or allergy-related concerns,Dermatology,,Tier 1,Self-limiting
+Gastrointestinal,Digestive or stomach-related concerns,Gastroenterology,,Tier 2,Standard
+Liver & Hepatic,Liver-related concerns,Hepatology,,Tier 3,Serious
+Infectious & Febrile,Possible infection-related illness,Infectious Disease,consider General Physician first if access is limited,Tier 3,Serious
+Respiratory,Breathing or chest-related concerns,Pulmonology,consider ENT if upper-throat/nasal symptoms dominate,Tier 3,Serious
+Cardiovascular,Heart and circulation-related concerns,Cardiology,,Tier 4,Critical
+Neurological,Nervous-system-related concerns,Neurology,consider ENT if vertigo/balance symptoms dominate,Tier 4,Critical
+Endocrine & Metabolic,Hormonal or metabolic concerns,Endocrinology,,Tier 3,Serious
+Musculoskeletal,"Bone, joint, or muscle-related concerns",Orthopaedics,consider Rheumatology for inflammatory joint patterns,Tier 2,Standard
+Urological,Urinary-system-related concerns,Urology,,Tier 2,Standard

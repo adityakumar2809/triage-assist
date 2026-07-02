@@ -1,0 +1,213 @@
+{% extends "base.html" %}
+
+{% block title %}Triage Assist - Intake{% endblock %}
+{% block body_class %}page-intake{% endblock %}
+
+{% block content %}
+  <section class="page-intro card">
+    <h1>Triage Assist</h1>
+    <p>
+      Select symptoms from the grouped checklist or search by name.
+      Safety screening always runs first.
+    </p>
+  </section>
+
+  <form
+    action="/screen"
+    method="post"
+    class="stack-lg"
+    data-intake-form
+  >
+    <section class="card stack-md">
+      <h2>Symptom search and autocomplete</h2>
+      <div class="form-grid">
+        <div class="field-group">
+          <label for="symptom_search">Search symptom names</label>
+          <input
+            id="symptom_search"
+            list="symptom_suggestions"
+            placeholder="e.g. chest pain"
+            autocomplete="off"
+            data-symptom-search
+          >
+          <datalist id="symptom_suggestions">
+            {% for symptom_name in symptom_options %}
+              <option
+                value="{{ symptom_name|humanize_label }}"
+                label="{{ symptom_name|humanize_label }}"
+              ></option>
+            {% endfor %}
+          </datalist>
+        </div>
+        <div class="field-group field-group--compact">
+          <button
+            id="add_symptom_button"
+            type="button"
+            class="button-secondary"
+            data-add-symptom
+          >
+            Add symptom to checklist
+          </button>
+        </div>
+      </div>
+
+      <div class="field-group">
+        <label for="symptom_filter">Filter checklist</label>
+        <input
+          id="symptom_filter"
+          placeholder="Type to filter grouped symptoms"
+          autocomplete="off"
+          data-symptom-filter
+        >
+      </div>
+    </section>
+
+    <section class="card stack-md">
+      <h2>Grouped symptom checklist</h2>
+      <p class="muted">
+        Selected symptoms:
+        <strong id="selected_count" data-selected-count>0</strong>
+      </p>
+      <div
+        id="selected_chips"
+        class="chip-list"
+        data-selected-chips
+        aria-live="polite"
+      ></div>
+
+      <div class="group-stack">
+        {% for group_name, symptoms in body_system_groups.items() %}
+          <details data-body-group>
+            <summary>
+              <span>{{ group_name }}</span>
+              <span class="group-count">{{ symptoms|length }} symptoms</span>
+            </summary>
+            <div class="symptom-grid">
+              {% for symptom_name in symptoms %}
+                <label
+                  class="symptom-option"
+                  data-symptom-label
+                  data-symptom-name="{{ symptom_name }}"
+                  data-symptom-humanized="{{ symptom_name|humanize_label }}"
+                >
+                  <input
+                    type="checkbox"
+                    name="selected_symptoms"
+                    value="{{ symptom_name }}"
+                    data-symptom-checkbox
+                  >
+                  <span>{{ symptom_name|humanize_label }}</span>
+                </label>
+              {% endfor %}
+            </div>
+          </details>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="card stack-md">
+      <h2>Raw symptom text (optional)</h2>
+      <label for="raw_text">Describe symptoms in your own words</label>
+      <textarea
+        id="raw_text"
+        name="raw_text"
+        data-raw-text
+        rows="4"
+        cols="60"
+        placeholder="e.g. chest pressure and short of breath"
+      ></textarea>
+    </section>
+
+    <section class="card stack-md">
+      <h2>Optional risk-factor questionnaire</h2>
+      <p class="helper-text">
+        This questionnaire is optional. Unanswered fields default safely.
+      </p>
+      <div class="form-grid risk-grid">
+        {% for feature_name, prompt in risk_question_prompts.items() %}
+          <div class="field-group">
+            <label
+              for="risk_{{ feature_name }}"
+              class="risk-label"
+            >
+              {{ prompt }}
+            </label>
+            <select
+              id="risk_{{ feature_name }}"
+              name="risk_{{ feature_name }}"
+            >
+              <option value="prefer_not_to_say" selected>
+                Prefer not to say
+              </option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </div>
+        {% endfor %}
+      </div>
+    </section>
+
+    <section class="card stack-md">
+      <h2>Duration and severity (optional)</h2>
+      <div class="form-grid">
+        <div class="field-group">
+          <label for="duration_days">
+            How many days has this been going on?
+          </label>
+          <input
+            id="duration_days"
+            name="duration_days"
+            type="number"
+            min="0"
+            step="1"
+            placeholder="e.g. 2"
+          >
+        </div>
+        <div class="field-group">
+          <label for="self_severity_slider">How severe is it (1-10)?</label>
+          <input
+            type="hidden"
+            id="self_severity_1_10"
+            name="self_severity_1_10"
+            value=""
+          >
+          <input
+            id="self_severity_slider"
+            type="range"
+            min="1"
+            max="10"
+            step="1"
+            value="5"
+            data-severity-slider
+            aria-describedby="severity_value_hint"
+          >
+          <div class="range-row">
+            <span class="muted">1</span>
+            <output id="severity_value_hint" for="self_severity_slider">
+              5
+            </output>
+            <span class="muted">10</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <p
+      class="validation-error"
+      data-validation-error
+      aria-live="polite"
+      hidden
+    >
+      Please select at least one symptom or describe your symptoms in the text
+      box.
+    </p>
+
+    <button
+      type="submit"
+      class="button-primary"
+      data-submit-button
+    >
+      Review mapped symptoms
+    </button>
+  </form>
+{% endblock %}

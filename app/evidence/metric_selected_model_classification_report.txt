@@ -1,0 +1,17 @@
+                       precision    recall  f1-score   support
+
+       Cardiovascular     1.0000    1.0000    1.0000        72
+Endocrine & Metabolic     1.0000    1.0000    1.0000        97
+     Gastrointestinal     1.0000    1.0000    1.0000        97
+ Infectious & Febrile     1.0000    1.0000    1.0000       121
+      Liver & Hepatic     1.0000    1.0000    1.0000       194
+      Musculoskeletal     1.0000    1.0000    1.0000        73
+         Neurological     1.0000    1.0000    1.0000        73
+          Respiratory     1.0000    1.0000    1.0000        97
+      Skin & Allergic     1.0000    1.0000    1.0000       145
+           Urological     1.0000    1.0000    1.0000        24
+
+             accuracy                         1.0000       993
+            macro avg     1.0000    1.0000    1.0000       993
+         weighted avg     1.0000    1.0000    1.0000       993
+

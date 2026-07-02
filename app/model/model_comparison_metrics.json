@@ -1,0 +1,55 @@
+{
+  "random_seed": 42,
+  "test_size": 0.2,
+  "primary_metric": "macro_f1",
+  "stopping_rule": "Evaluate the fixed agreed set of five classical models under one stratified split with RANDOM_SEED=42. Select the best by highest macro-F1. If models tie within tolerance, prefer stronger realistic 2\u20134 symptom vignette behavior, then choose the smaller serialized model size to preserve free-tier memory headroom.",
+  "synthetic_data_caveat": "Metrics are from a synthetic disease-symptom dataset. High split accuracy reflects pattern learning on synthetic generation, not clinical diagnostic performance. Macro-F1 and vignette behavior are reported for honest characterization.",
+  "selected_model": "BernoulliNB",
+  "results": [
+    {
+      "model_name": "BernoulliNB",
+      "macro_f1": 1.0,
+      "weighted_f1": 1.0,
+      "accuracy": 1.0,
+      "vignette_top1_match_count": 9,
+      "vignette_expected_in_top3_count": 10,
+      "serialized_size_bytes": 25831
+    },
+    {
+      "model_name": "RandomForest",
+      "macro_f1": 1.0,
+      "weighted_f1": 1.0,
+      "accuracy": 1.0,
+      "vignette_top1_match_count": 9,
+      "vignette_expected_in_top3_count": 10,
+      "serialized_size_bytes": 6335401
+    },
+    {
+      "model_name": "KNN",
+      "macro_f1": 1.0,
+      "weighted_f1": 1.0,
+      "accuracy": 1.0,
+      "vignette_top1_match_count": 9,
+      "vignette_expected_in_top3_count": 9,
+      "serialized_size_bytes": 4194468
+    },
+    {
+      "model_name": "SVM",
+      "macro_f1": 1.0,
+      "weighted_f1": 1.0,
+      "accuracy": 1.0,
+      "vignette_top1_match_count": 6,
+      "vignette_expected_in_top3_count": 9,
+      "serialized_size_bytes": 327499
+    },
+    {
+      "model_name": "DecisionTree",
+      "macro_f1": 1.0,
+      "weighted_f1": 1.0,
+      "accuracy": 1.0,
+      "vignette_top1_match_count": 5,
+      "vignette_expected_in_top3_count": 6,
+      "serialized_size_bytes": 17625
+    }
+  ]
+}

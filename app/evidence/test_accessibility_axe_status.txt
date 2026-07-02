@@ -1,0 +1,2 @@
+axe-core automation is not configured in this repository at B10 (no axe runner dependency or CI target).
+Accessibility evidence is marked as not-run for this chunk.

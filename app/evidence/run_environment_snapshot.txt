@@ -1,0 +1,20 @@
+captured_utc=2026-06-19T18:57:26Z
+commit=37129fb
+python_version=3.12.13
+platform=macOS-26.5.1-arm64-arm-64bit
+sklearn_version=1.5.2
+
+requirements.txt (pinned):
+black==24.10.0
+Flask==3.1.1
+joblib==1.4.2
+nltk==3.9.1
+numpy==2.1.3
+pandas==2.2.3
+pyspellchecker==0.8.1
+pytest==8.3.3
+python-dotenv==1.0.1
+rapidfuzz==3.10.1
+ruff==0.6.9
+scikit-learn==1.5.2
+scipy==1.14.1

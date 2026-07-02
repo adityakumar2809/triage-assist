@@ -1,0 +1,6 @@
+captured_utc=2026-06-19T18:57:26Z
+commit=37129fb
+random_seed=42
+test_size=0.2
+python_version=3.12.13
+sklearn_version=1.5.2

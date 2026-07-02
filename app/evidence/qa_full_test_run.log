@@ -1,0 +1,241 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.12.13, pytest-8.3.3, pluggy-1.6.0 -- /Users/adityakusingh/Library/CloudStorage/OneDrive-PayPal/Projects/Healthcare-Screening/triage-assist/venv/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/adityakusingh/Library/CloudStorage/OneDrive-PayPal/Projects/Healthcare-Screening/triage-assist/app
+configfile: pyproject.toml
+plugins: base-url-2.1.0, playwright-0.8.0
+collecting ... collected 201 items
+
+app/tests/qa/test_e2e_playwright.py::TestE2EEmergencyRouting::test_structured_red_flag_shows_emergency SKIPPED
+app/tests/qa/test_e2e_playwright.py::TestE2EEmergencyRouting::test_free_text_danger_phrase_shows_emergency SKIPPED
+app/tests/qa/test_e2e_playwright.py::TestE2EEmergencyRouting::test_crisis_phrase_shows_crisis_message SKIPPED
+app/tests/qa/test_e2e_playwright.py::TestE2ENormalFlow::test_skin_symptoms_produce_result SKIPPED
+app/tests/qa/test_e2e_playwright.py::TestE2EUncertaintyPath::test_empty_submission_uncertainty SKIPPED
+app/tests/qa/test_e2e_playwright.py::TestE2EDisclaimerVisible::test_disclaimer_on_normal_result SKIPPED
+app/tests/qa/test_e2e_playwright.py::TestE2EDisclaimerVisible::test_disclaimer_on_emergency_result SKIPPED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_crash[empty_string] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_crash[whitespace_only] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_crash[special_chars] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_crash[unicode_non_latin] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_crash[emoji_only] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_crash[very_long] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_crash[sql_injection] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_crash[xss_attempt] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_crash[null_bytes] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_crash[newlines_tabs] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_crash[numbers_only] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_crash[single_char] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_crash[repeated_negation] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_crash[html_entities] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_500[empty_string] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_500[whitespace_only] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_500[special_chars] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_500[unicode_non_latin] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_500[emoji_only] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_500[very_long] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_500[sql_injection] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_500[xss_attempt] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_500[null_bytes] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_500[newlines_tabs] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_500[numbers_only] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_500[single_char] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_500[repeated_negation] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningFreeText::test_malformed_free_text_no_500[html_entities] PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningStructured::test_invalid_symptom_names_ignored PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningStructured::test_empty_form_submission PASSED
+app/tests/qa/test_input_hardening.py::TestInputHardeningStructured::test_duplicate_symptoms PASSED
+app/tests/qa/test_input_hardening.py::TestResultObjectContract::test_normal_result_has_all_fields PASSED
+app/tests/qa/test_input_hardening.py::TestResultObjectContract::test_uncertainty_result_has_all_fields PASSED
+app/tests/qa/test_input_hardening.py::TestResultObjectContract::test_emergency_result_has_all_fields PASSED
+app/tests/qa/test_input_hardening.py::TestEndpointRobustness::test_get_index_returns_200 PASSED
+app/tests/qa/test_input_hardening.py::TestEndpointRobustness::test_get_health_returns_200 PASSED
+app/tests/qa/test_input_hardening.py::TestEndpointRobustness::test_get_history_returns_200 PASSED
+app/tests/qa/test_input_hardening.py::TestEndpointRobustness::test_admin_without_token_blocked PASSED
+app/tests/qa/test_input_hardening.py::TestEndpointRobustness::test_summary_invalid_id_returns_404 PASSED
+app/tests/qa/test_ml_metrics.py::TestMLMetrics::test_selected_model_is_bernoulli_nb PASSED
+app/tests/qa/test_ml_metrics.py::TestMLMetrics::test_macro_f1_above_minimum 
+[QA METRIC] Macro-F1 = 1.0000 (seed=42)
+PASSED
+app/tests/qa/test_ml_metrics.py::TestMLMetrics::test_confusion_matrix_shape PASSED
+app/tests/qa/test_ml_metrics.py::TestMLMetrics::test_no_class_has_zero_recall PASSED
+app/tests/qa/test_ml_metrics.py::TestMLMetrics::test_feature_order_matches_frozen PASSED
+app/tests/qa/test_ml_metrics.py::TestMLMetrics::test_synthetic_data_caveat_noted 
+[QA CAVEAT] CAVEAT: Model metrics are computed on a synthetic dataset (SymBiPredict 2022). High accuracy reflects the dataset's generation patterns, not clinical diagnostic validity. The model is used ONLY as an internal routing signal.
+PASSED
+app/tests/qa/test_nlp_cascade_qa.py::TestNlpCascadeMapping::test_cascade_mapping[NLP-01] PASSED
+app/tests/qa/test_nlp_cascade_qa.py::TestNlpCascadeMapping::test_cascade_mapping[NLP-02] PASSED
+app/tests/qa/test_nlp_cascade_qa.py::TestNlpCascadeMapping::test_cascade_mapping[NLP-03] PASSED
+app/tests/qa/test_nlp_cascade_qa.py::TestNlpCascadeMapping::test_cascade_mapping[NLP-04] PASSED
+app/tests/qa/test_nlp_cascade_qa.py::TestNlpCascadeMapping::test_cascade_mapping[NLP-05] PASSED
+app/tests/qa/test_nlp_cascade_qa.py::TestNlpCascadeMapping::test_cascade_mapping[NLP-06] PASSED
+app/tests/qa/test_nlp_cascade_qa.py::TestNlpCascadeMapping::test_cascade_mapping[NLP-07] PASSED
+app/tests/qa/test_nlp_cascade_qa.py::TestNlpCascadeMapping::test_cascade_mapping[NLP-08] PASSED
+app/tests/qa/test_nlp_cascade_qa.py::TestNlpCascadeMapping::test_cascade_mapping[NLP-09] PASSED
+app/tests/qa/test_nlp_cascade_qa.py::TestNlpCascadeMapping::test_cascade_mapping[NLP-10] PASSED
+app/tests/qa/test_nlp_cascade_qa.py::TestNlpDurationExtraction::test_duration_extraction[NLP-02] PASSED
+app/tests/qa/test_nlp_cascade_qa.py::TestNlpDurationExtraction::test_duration_extraction[NLP-04] PASSED
+app/tests/qa/test_nlp_cascade_qa.py::TestNlpDurationExtraction::test_duration_extraction[NLP-05] PASSED
+app/tests/qa/test_nlp_cascade_qa.py::TestNlpSeverityExtraction::test_severity_extraction[NLP-03] PASSED
+app/tests/qa/test_nlp_cascade_qa.py::TestNlpSeverityExtraction::test_severity_extraction[NLP-05] PASSED
+app/tests/qa/test_nlp_cascade_qa.py::TestNlpNoSilentDrop::test_gibberish_surfaced_as_unmatched PASSED
+app/tests/qa/test_nlp_cascade_qa.py::TestNlpNoSilentDrop::test_empty_input_returns_empty PASSED
+app/tests/qa/test_nlp_cascade_qa.py::TestNlpPrecisionRecall::test_precision_above_threshold PASSED
+app/tests/qa/test_nlp_cascade_qa.py::TestNlpPrecisionRecall::test_recall_above_threshold PASSED
+app/tests/qa/test_safety_adversarial.py::TestSoloRedFlagTriggers::test_solo_trigger_fires_emergency[chest_pain] PASSED
+app/tests/qa/test_safety_adversarial.py::TestSoloRedFlagTriggers::test_solo_trigger_fires_emergency[breathlessness] PASSED
+app/tests/qa/test_safety_adversarial.py::TestSoloRedFlagTriggers::test_solo_trigger_fires_emergency[weakness_of_one_body_side] PASSED
+app/tests/qa/test_safety_adversarial.py::TestSoloRedFlagTriggers::test_solo_trigger_fires_emergency[slurred_speech] PASSED
+app/tests/qa/test_safety_adversarial.py::TestSoloRedFlagTriggers::test_solo_trigger_fires_emergency[altered_sensorium] PASSED
+app/tests/qa/test_safety_adversarial.py::TestSoloRedFlagTriggers::test_solo_trigger_fires_emergency[coma] PASSED
+app/tests/qa/test_safety_adversarial.py::TestSoloRedFlagTriggers::test_solo_trigger_fires_emergency[blood_in_sputum] PASSED
+app/tests/qa/test_safety_adversarial.py::TestSoloRedFlagTriggers::test_solo_trigger_fires_emergency[bloody_stool] PASSED
+app/tests/qa/test_safety_adversarial.py::TestSoloRedFlagTriggers::test_solo_trigger_fires_emergency[stomach_bleeding] PASSED
+app/tests/qa/test_safety_adversarial.py::TestSoloRedFlagTriggers::test_solo_trigger_fires_emergency[acute_liver_failure] PASSED
+app/tests/qa/test_safety_adversarial.py::TestSoloRedFlagTriggers::test_solo_trigger_fires_emergency[fluid_overload] PASSED
+app/tests/qa/test_safety_adversarial.py::TestSoloRedFlagTriggers::test_solo_trigger_not_crisis_message[chest_pain] PASSED
+app/tests/qa/test_safety_adversarial.py::TestSoloRedFlagTriggers::test_solo_trigger_not_crisis_message[breathlessness] PASSED
+app/tests/qa/test_safety_adversarial.py::TestSoloRedFlagTriggers::test_solo_trigger_not_crisis_message[weakness_of_one_body_side] PASSED
+app/tests/qa/test_safety_adversarial.py::TestSoloRedFlagTriggers::test_solo_trigger_not_crisis_message[slurred_speech] PASSED
+app/tests/qa/test_safety_adversarial.py::TestSoloRedFlagTriggers::test_solo_trigger_not_crisis_message[altered_sensorium] PASSED
+app/tests/qa/test_safety_adversarial.py::TestSoloRedFlagTriggers::test_solo_trigger_not_crisis_message[coma] PASSED
+app/tests/qa/test_safety_adversarial.py::TestSoloRedFlagTriggers::test_solo_trigger_not_crisis_message[blood_in_sputum] PASSED
+app/tests/qa/test_safety_adversarial.py::TestSoloRedFlagTriggers::test_solo_trigger_not_crisis_message[bloody_stool] PASSED
+app/tests/qa/test_safety_adversarial.py::TestSoloRedFlagTriggers::test_solo_trigger_not_crisis_message[stomach_bleeding] PASSED
+app/tests/qa/test_safety_adversarial.py::TestSoloRedFlagTriggers::test_solo_trigger_not_crisis_message[acute_liver_failure] PASSED
+app/tests/qa/test_safety_adversarial.py::TestSoloRedFlagTriggers::test_solo_trigger_not_crisis_message[fluid_overload] PASSED
+app/tests/qa/test_safety_adversarial.py::TestCombinationRules::test_cr2_two_combination_symptoms PASSED
+app/tests/qa/test_safety_adversarial.py::TestCombinationRules::test_cr2_palpitations_dizziness PASSED
+app/tests/qa/test_safety_adversarial.py::TestCombinationRules::test_cr3_stiff_neck_high_fever PASSED
+app/tests/qa/test_safety_adversarial.py::TestCombinationRules::test_cr4_anaphylaxis_lips_breathlessness PASSED
+app/tests/qa/test_safety_adversarial.py::TestCombinationRules::test_cr4_anaphylaxis_lips_swelling PASSED
+app/tests/qa/test_safety_adversarial.py::TestCombinationRules::test_single_combination_symptom_does_not_fire PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[crushing chest pain] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[chest pressure] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[tightness in chest] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[worst headache of my life] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[thunderclap headache] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[sudden severe headache] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[sudden weakness] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[weakness on one side] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[face drooping] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[can't speak] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[slurred speech] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[can't breathe] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[cannot breathe] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[struggling to breathe] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[gasping for air] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[turning blue] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[short of breath] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[throat closing] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[throat swelling] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[tongue swelling] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[coughing up blood] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[vomiting blood] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[blood in stool] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[black tarry stool] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[heavy bleeding] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[unconscious] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[passed out] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[won't wake up] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[unresponsive] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[confused] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[disoriented] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[very drowsy] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[seizure] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[convulsing] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[stiff neck and fever] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[severe allergic reaction] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[suicidal] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[want to end my life] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[kill myself] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[overdose] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[took too many pills] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[self harm] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_danger_phrase_fires[hurt myself] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_crisis_phrases_use_crisis_message[suicidal] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_crisis_phrases_use_crisis_message[want to end my life] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_crisis_phrases_use_crisis_message[kill myself] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_crisis_phrases_use_crisis_message[overdose] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_crisis_phrases_use_crisis_message[took too many pills] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_crisis_phrases_use_crisis_message[self harm] PASSED
+app/tests/qa/test_safety_adversarial.py::TestDangerPhrases::test_crisis_phrases_use_crisis_message[hurt myself] PASSED
+app/tests/qa/test_safety_adversarial.py::TestNegationSafety::test_negated_danger_phrase_does_not_fire PASSED
+app/tests/qa/test_safety_adversarial.py::TestNegationSafety::test_negated_phrase_does_not_suppress_other_danger PASSED
+app/tests/qa/test_safety_adversarial.py::TestNegationSafety::test_negation_does_not_suppress_distant_phrase PASSED
+app/tests/qa/test_safety_adversarial.py::TestNegationSafety::test_double_negation_fires XFAIL
+app/tests/qa/test_safety_adversarial.py::TestNegationSafety::test_negated_symptom_with_genuine_structured_red_flag PASSED
+app/tests/qa/test_safety_adversarial.py::TestNegationSafety::test_cant_say_no_suppression PASSED
+app/tests/qa/test_safety_adversarial.py::TestObfuscatedRedFlags::test_red_flag_buried_among_benign PASSED
+app/tests/qa/test_safety_adversarial.py::TestObfuscatedRedFlags::test_danger_phrase_buried_in_long_text PASSED
+app/tests/qa/test_safety_adversarial.py::TestObfuscatedRedFlags::test_danger_phrase_with_typo_variant PASSED
+app/tests/qa/test_safety_adversarial.py::TestObfuscatedRedFlags::test_case_insensitivity PASSED
+app/tests/qa/test_safety_adversarial.py::TestObfuscatedRedFlags::test_mixed_structured_and_text_combination PASSED
+app/tests/qa/test_safety_adversarial.py::TestEmergencyResultObject::test_standard_emergency_result_shape PASSED
+app/tests/qa/test_safety_adversarial.py::TestEmergencyResultObject::test_crisis_emergency_result_shape PASSED
+app/tests/qa/test_safety_adversarial.py::TestEmergencyResultObject::test_no_alarming_labels_in_emergency_result PASSED
+app/tests/qa/test_safety_adversarial.py::TestSafetyIndependence::test_safety_gate_takes_no_model_argument PASSED
+app/tests/qa/test_safety_adversarial.py::TestSafetyIndependence::test_emergency_response_skips_model PASSED
+app/tests/qa/test_stance_fidelity.py::TestNoAlarmingLabels::test_lookup_table_safe_phrasing PASSED
+app/tests/qa/test_stance_fidelity.py::TestNoAlarmingLabels::test_normal_result_no_alarming_labels PASSED
+app/tests/qa/test_stance_fidelity.py::TestNoAlarmingLabels::test_emergency_no_alarming_labels PASSED
+app/tests/qa/test_stance_fidelity.py::TestDisclaimerPresence::test_disclaimer_on_normal_result PASSED
+app/tests/qa/test_stance_fidelity.py::TestDisclaimerPresence::test_disclaimer_on_uncertainty_result PASSED
+app/tests/qa/test_stance_fidelity.py::TestDisclaimerPresence::test_disclaimer_on_emergency_result PASSED
+app/tests/qa/test_stance_fidelity.py::TestAreasAsDiscussionOnly::test_areas_list_bounded PASSED
+app/tests/qa/test_stance_fidelity.py::TestAreasAsDiscussionOnly::test_areas_empty_on_uncertainty PASSED
+app/tests/qa/test_stance_fidelity.py::TestAreasAsDiscussionOnly::test_areas_empty_on_emergency PASSED
+app/tests/qa/test_stance_fidelity.py::TestModelConfidenceNotExposed::test_html_result_page_no_confidence_value PASSED
+app/tests/qa/test_stance_fidelity.py::TestNoAbsenceAssertion::test_normal_result_no_absence_assertion PASSED
+app/tests/qa/test_triage_vignettes.py::TestTriageVignettes::test_vignette[V-IND-01] PASSED
+app/tests/qa/test_triage_vignettes.py::TestTriageVignettes::test_vignette[V-IND-02] PASSED
+app/tests/qa/test_triage_vignettes.py::TestTriageVignettes::test_vignette[V-IND-03] PASSED
+app/tests/qa/test_triage_vignettes.py::TestTriageVignettes::test_vignette[V-IND-04] PASSED
+app/tests/qa/test_triage_vignettes.py::TestTriageVignettes::test_vignette[V-IND-05] PASSED
+app/tests/qa/test_triage_vignettes.py::TestTriageVignettes::test_vignette[V-IND-06] PASSED
+app/tests/qa/test_triage_vignettes.py::TestTriageVignettes::test_vignette[V-IND-07] PASSED
+app/tests/qa/test_triage_vignettes.py::TestTriageVignettes::test_vignette[V-DD-01] PASSED
+app/tests/qa/test_triage_vignettes.py::TestTriageVignettes::test_vignette[V-DD-02] PASSED
+app/tests/qa/test_triage_vignettes.py::TestTriageVignettes::test_vignette[V-DD-03] PASSED
+app/tests/qa/test_triage_vignettes.py::TestTriageVignettes::test_vignette[V-DD-04] PASSED
+app/tests/qa/test_triage_vignettes.py::TestTriageVignettes::test_vignette[V-DD-05] PASSED
+app/tests/qa/test_triage_vignettes.py::TestVignetteProvenance::test_all_vignettes_have_provenance PASSED
+app/tests/qa/test_triage_vignettes.py::TestVignetteProvenance::test_independent_count PASSED
+app/tests/qa/test_triage_vignettes.py::TestVignetteProvenance::test_dataset_derived_count PASSED
+app/tests/qa/test_uncertainty_path.py::TestUncertaintyPathEmpty::test_empty_symptom_list PASSED
+app/tests/qa/test_uncertainty_path.py::TestUncertaintyPathEmpty::test_invalid_symptom_names PASSED
+app/tests/qa/test_uncertainty_path.py::TestUncertaintyPathSparse::test_sparse_single_symptom_behaviour[symptoms0] PASSED
+app/tests/qa/test_uncertainty_path.py::TestUncertaintyPathSparse::test_sparse_single_symptom_behaviour[symptoms1] PASSED
+app/tests/qa/test_uncertainty_path.py::TestUncertaintyPathSparse::test_sparse_single_symptom_behaviour[symptoms2] PASSED
+app/tests/qa/test_uncertainty_path.py::TestUncertaintyPathSparse::test_sparse_single_symptom_behaviour[symptoms3] PASSED
+app/tests/qa/test_uncertainty_path.py::TestUncertaintyPathSparse::test_sparse_single_symptom_behaviour[symptoms4] PASSED
+app/tests/qa/test_uncertainty_path.py::TestThresholdBehaviour::test_config_uncertainty_threshold PASSED
+app/tests/qa/test_uncertainty_path.py::TestThresholdBehaviour::test_high_confidence_not_uncertain PASSED
+app/tests/qa/test_uncertainty_path.py::TestUncertaintyResultContract::test_uncertainty_result_fields PASSED
+
+=============================== warnings summary ===============================
+tests/qa/test_input_hardening.py: 2 warnings
+tests/qa/test_ml_metrics.py: 3 warnings
+tests/qa/test_stance_fidelity.py: 5 warnings
+tests/qa/test_triage_vignettes.py: 9 warnings
+tests/qa/test_uncertainty_path.py: 6 warnings
+  /Users/adityakusingh/Library/CloudStorage/OneDrive-PayPal/Projects/Healthcare-Screening/triage-assist/venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:205: RuntimeWarning: divide by zero encountered in matmul
+    ret = a @ b
+
+tests/qa/test_input_hardening.py: 2 warnings
+tests/qa/test_ml_metrics.py: 3 warnings
+tests/qa/test_stance_fidelity.py: 5 warnings
+tests/qa/test_triage_vignettes.py: 9 warnings
+tests/qa/test_uncertainty_path.py: 6 warnings
+  /Users/adityakusingh/Library/CloudStorage/OneDrive-PayPal/Projects/Healthcare-Screening/triage-assist/venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:205: RuntimeWarning: overflow encountered in matmul
+    ret = a @ b
+
+tests/qa/test_input_hardening.py: 2 warnings
+tests/qa/test_ml_metrics.py: 3 warnings
+tests/qa/test_stance_fidelity.py: 5 warnings
+tests/qa/test_triage_vignettes.py: 9 warnings
+tests/qa/test_uncertainty_path.py: 6 warnings
+  /Users/adityakusingh/Library/CloudStorage/OneDrive-PayPal/Projects/Healthcare-Screening/triage-assist/venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:205: RuntimeWarning: invalid value encountered in matmul
+    ret = a @ b
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========== 193 passed, 7 skipped, 1 xfailed, 75 warnings in 16.26s ============

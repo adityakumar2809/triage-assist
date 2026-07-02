@@ -1,0 +1,9 @@
+captured_utc=2026-06-19T18:57:26Z
+commit=37129fb
+bundle_path=app/model/triage_model_bundle.joblib
+bundle_size_bytes=47346
+bundle_size_kib=46.24
+bundle_model=BernoulliNB
+bundle_sklearn_version=1.5.2
+local_sklearn_version=1.5.2
+predict_proba_shape=(1, 10)

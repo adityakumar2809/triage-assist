@@ -1,0 +1,160 @@
+{% extends "base.html" %}
+
+{% block title %}Triage Assist - Screening Result{% endblock %}
+{% block body_class %}
+  page-result
+  {% if result.emergency_routed %}page-result-emergency{% endif %}
+  {% if result.low_confidence and not result.emergency_routed %}
+    page-result-uncertainty
+  {% endif %}
+{% endblock %}
+
+{% block content %}
+  <section
+    class="
+      card
+      urgency-hero
+      urgency-{{ result.urgency }}
+      {% if result.low_confidence and not result.emergency_routed %}
+        urgency-uncertainty
+      {% endif %}
+      {% if result.emergency_routed %}
+        urgency-emergency
+      {% endif %}
+    "
+  >
+    <h1>
+      Screening result
+      <span class="urgency-badge urgency-{{ result.urgency }}">
+        {{ result.urgency|humanize_label }}
+      </span>
+    </h1>
+    <p>{{ result.urgency_message }}</p>
+  </section>
+
+  <section class="result-grid">
+    <article class="card stack-sm point-of-care-card">
+      <h2>Point of care</h2>
+      <p class="point-of-care-value">
+        {{ result.point_of_care|humanize_label }}
+      </p>
+      {% if result.point_of_care_note %}
+        <p class="muted">{{ result.point_of_care_note }}</p>
+      {% endif %}
+    </article>
+
+    {% if not result.emergency_routed %}
+      <article class="card stack-sm">
+        <h2>Symptoms understood</h2>
+        {% if result.symptoms_understood %}
+          <ul class="chip-list chip-list--static">
+            {% for item in result.symptoms_understood %}
+              <li class="chip">{{ item|humanize_label }}</li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="muted">None</p>
+        {% endif %}
+      </article>
+    {% endif %}
+
+    {% if not result.emergency_routed %}
+      <article class="card stack-sm areas-card">
+        <h2>Areas to discuss</h2>
+        {% if result.areas_to_discuss %}
+          <ul class="stack-xs areas-list">
+            {% for item in result.areas_to_discuss %}
+              <li>{{ item|humanize_label }}</li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="muted">None</p>
+        {% endif %}
+      </article>
+    {% endif %}
+
+    {% if not result.emergency_routed %}
+      <article class="card stack-sm result-card-seek">
+        <h2>Seek sooner if</h2>
+        {% if result.seek_sooner_if %}
+          <ul class="stack-xs">
+            {% for item in result.seek_sooner_if %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          <p class="muted">None</p>
+        {% endif %}
+      </article>
+    {% endif %}
+  </section>
+
+  <section class="card disclaimer-note">
+    <p>{{ result.disclaimer }}</p>
+  </section>
+
+  <dl class="sr-only">
+    {% for field_name in field_order %}
+      <dt><strong>{{ field_name }}</strong></dt>
+      <dd>
+        {% set field_value = result[field_name] %}
+        {% if field_value is sequence and field_value is not string %}
+          <ul>
+            {% for item in field_value %}
+              <li>{{ item }}</li>
+            {% endfor %}
+          </ul>
+        {% else %}
+          {{ field_value }}
+        {% endif %}
+      </dd>
+    {% endfor %}
+  </dl>
+
+  <section class="quick-links">
+    {% if screening_session_id %}
+      <a
+        href="/summary/{{ screening_session_id }}"
+        class="button-secondary"
+      >
+        <svg
+          viewBox="0 0 24 24"
+          class="button-icon"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <path
+            d="M7 3h10v5H7V3zm10 14v4H7v-4h10zm2-8a2 2 0 0 1 2 2v6h-2v-2H5v2H3v-6a2 2 0 0 1 2-2h14z"
+          ></path>
+        </svg>
+        Print summary
+      </a>
+      <a href="/history" class="button-secondary">
+        <svg
+          viewBox="0 0 24 24"
+          class="button-icon"
+          aria-hidden="true"
+          focusable="false"
+        >
+          <path
+            d="M8 2h8a2 2 0 0 1 2 2v2h2v16H4V6h2V4a2 2 0 0 1 2-2zm0 4h8V4H8v2zm0 4h8v2H8v-2zm0 4h8v2H8v-2z"
+          ></path>
+        </svg>
+        View screening history
+      </a>
+    {% endif %}
+    <a href="/" class="button-primary button-inline">
+      <svg
+        viewBox="0 0 24 24"
+        class="button-icon"
+        aria-hidden="true"
+        focusable="false"
+      >
+        <path
+          d="M12 4a8 8 0 0 1 7.66 6h-2.1A6 6 0 1 0 16 15.2l-2.2-2.2H20v6.2L17.4 17A8 8 0 1 1 12 4z"
+        ></path>
+      </svg>
+      Start new screening
+    </a>
+  </section>
+{% endblock %}

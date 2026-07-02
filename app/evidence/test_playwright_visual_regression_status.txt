@@ -1,0 +1,2 @@
+No visual-regression baseline suite is configured in this repository (no pytest-playwright snapshot assertions found).
+Playwright evidence in this chunk is state-capture only.

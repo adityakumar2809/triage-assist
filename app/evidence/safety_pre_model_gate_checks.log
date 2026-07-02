@@ -1,0 +1,28 @@
+$ venv/bin/pytest app/tests/test_web_app.py -k "structured_red_flag_routes_to_emergency or danger_phrase_routes_to_emergency or negated_red_flag_does_not_trigger_emergency or danger_phrase_short_circuits_before_cascade" -v
+============================= test session starts ==============================
+platform darwin -- Python 3.12.13, pytest-8.3.3, pluggy-1.6.0 -- /Users/adityakusingh/Library/CloudStorage/OneDrive-PayPal/Projects/Healthcare-Screening/triage-assist/venv/bin/python3.12
+cachedir: .pytest_cache
+rootdir: /Users/adityakusingh/Library/CloudStorage/OneDrive-PayPal/Projects/Healthcare-Screening/triage-assist/app
+configfile: pyproject.toml
+collecting ... collected 21 items / 17 deselected / 4 selected
+
+app/tests/test_web_app.py::test_structured_red_flag_routes_to_emergency PASSED [ 25%]
+app/tests/test_web_app.py::test_danger_phrase_routes_to_emergency PASSED [ 50%]
+app/tests/test_web_app.py::test_negated_red_flag_does_not_trigger_emergency PASSED [ 75%]
+app/tests/test_web_app.py::test_danger_phrase_short_circuits_before_cascade PASSED [100%]
+
+=============================== warnings summary ===============================
+tests/test_web_app.py::test_negated_red_flag_does_not_trigger_emergency
+  /Users/adityakusingh/Library/CloudStorage/OneDrive-PayPal/Projects/Healthcare-Screening/triage-assist/venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:205: RuntimeWarning: divide by zero encountered in matmul
+    ret = a @ b
+
+tests/test_web_app.py::test_negated_red_flag_does_not_trigger_emergency
+  /Users/adityakusingh/Library/CloudStorage/OneDrive-PayPal/Projects/Healthcare-Screening/triage-assist/venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:205: RuntimeWarning: overflow encountered in matmul
+    ret = a @ b
+
+tests/test_web_app.py::test_negated_red_flag_does_not_trigger_emergency
+  /Users/adityakusingh/Library/CloudStorage/OneDrive-PayPal/Projects/Healthcare-Screening/triage-assist/venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:205: RuntimeWarning: invalid value encountered in matmul
+    ret = a @ b
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+================= 4 passed, 17 deselected, 3 warnings in 1.08s =================

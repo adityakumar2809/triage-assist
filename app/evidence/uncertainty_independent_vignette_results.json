@@ -1,0 +1,150 @@
+{
+  "tau": 0.6,
+  "results": [
+    {
+      "id": "ind-01",
+      "symptoms": [
+        "itching",
+        "joint_pain"
+      ],
+      "predicted_top1": "Skin & Allergic",
+      "top1_confidence": 0.997171,
+      "below_tau_0_60": false,
+      "top3": [
+        {
+          "category": "Skin & Allergic",
+          "probability": 0.997171
+        },
+        {
+          "category": "Musculoskeletal",
+          "probability": 0.001842
+        },
+        {
+          "category": "Liver & Hepatic",
+          "probability": 0.000784
+        }
+      ]
+    },
+    {
+      "id": "ind-02",
+      "symptoms": [
+        "cough",
+        "headache"
+      ],
+      "predicted_top1": "Neurological",
+      "top1_confidence": 0.597846,
+      "below_tau_0_60": true,
+      "top3": [
+        {
+          "category": "Neurological",
+          "probability": 0.597846
+        },
+        {
+          "category": "Cardiovascular",
+          "probability": 0.218256
+        },
+        {
+          "category": "Gastrointestinal",
+          "probability": 0.179727
+        }
+      ]
+    },
+    {
+      "id": "ind-03",
+      "symptoms": [
+        "acidity",
+        "nausea",
+        "vomiting"
+      ],
+      "predicted_top1": "Neurological",
+      "top1_confidence": 0.934257,
+      "below_tau_0_60": false,
+      "top3": [
+        {
+          "category": "Neurological",
+          "probability": 0.934257
+        },
+        {
+          "category": "Gastrointestinal",
+          "probability": 0.065405
+        },
+        {
+          "category": "Liver & Hepatic",
+          "probability": 0.000134
+        }
+      ]
+    },
+    {
+      "id": "ind-04",
+      "symptoms": [
+        "yellowish_skin",
+        "fatigue"
+      ],
+      "predicted_top1": "Liver & Hepatic",
+      "top1_confidence": 0.946181,
+      "below_tau_0_60": false,
+      "top3": [
+        {
+          "category": "Liver & Hepatic",
+          "probability": 0.946181
+        },
+        {
+          "category": "Cardiovascular",
+          "probability": 0.052473
+        },
+        {
+          "category": "Skin & Allergic",
+          "probability": 0.000497
+        }
+      ]
+    },
+    {
+      "id": "ind-05",
+      "symptoms": [
+        "burning_micturition",
+        "foul_smell_of_urine"
+      ],
+      "predicted_top1": "Urological",
+      "top1_confidence": 0.988098,
+      "below_tau_0_60": false,
+      "top3": [
+        {
+          "category": "Urological",
+          "probability": 0.988098
+        },
+        {
+          "category": "Skin & Allergic",
+          "probability": 0.011658
+        },
+        {
+          "category": "Gastrointestinal",
+          "probability": 9.2e-05
+        }
+      ]
+    },
+    {
+      "id": "ind-06",
+      "symptoms": [
+        "dizziness",
+        "palpitations"
+      ],
+      "predicted_top1": "Cardiovascular",
+      "top1_confidence": 0.620172,
+      "below_tau_0_60": false,
+      "top3": [
+        {
+          "category": "Cardiovascular",
+          "probability": 0.620172
+        },
+        {
+          "category": "Musculoskeletal",
+          "probability": 0.364077
+        },
+        {
+          "category": "Skin & Allergic",
+          "probability": 0.006261
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+raw_label,condition_category,spotcheck_reason,safety_coverage_status
+Acne,Skin & Allergic,baseline Tier 1 label,ok
+Allergy,Skin & Allergic,unsafe-low seam: verify anaphylaxis phrase coverage,covered
+Drug Reaction,Skin & Allergic,unsafe-low seam: verify anaphylaxis phrase coverage,covered
+Fungal Infection,Skin & Allergic,baseline Tier 1 label,ok
+Impetigo,Skin & Allergic,baseline Tier 1 label,ok
+Psoriasis,Skin & Allergic,baseline Tier 1 label,ok

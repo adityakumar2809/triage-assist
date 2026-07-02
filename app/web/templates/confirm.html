@@ -1,0 +1,181 @@
+{% extends "base.html" %}
+
+{% block title %}Triage Assist - Confirm Symptoms{% endblock %}
+{% block body_class %}page-confirm{% endblock %}
+
+{% block content %}
+  <section class="card stack-sm">
+    <h1>Confirm what we understood</h1>
+    <p>Review understood, unsure, and unmatched items before results.</p>
+  </section>
+
+  <form action="/result" method="post" class="stack-lg">
+    <input type="hidden" name="raw_text" value="{{ raw_text }}">
+    {% for symptom_name in entered_structured_symptoms %}
+      <input
+        type="hidden"
+        name="entered_structured_symptoms"
+        value="{{ symptom_name }}"
+      >
+    {% endfor %}
+    {% for symptom_name in entered_free_text_symptoms %}
+      <input
+        type="hidden"
+        name="entered_free_text_symptoms"
+        value="{{ symptom_name }}"
+      >
+    {% endfor %}
+    {% for symptom_name in unsure_candidate_symptoms %}
+      <input
+        type="hidden"
+        name="unsure_candidate_symptoms"
+        value="{{ symptom_name }}"
+      >
+    {% endfor %}
+    {% for token in unmatched_tokens %}
+      <input
+        type="hidden"
+        name="unmatched_tokens"
+        value="{{ token }}"
+      >
+    {% endfor %}
+
+    <section class="card stack-md">
+      <h2>Optional risk-factor questionnaire</h2>
+      <p class="helper-text">
+        Unanswered or "Prefer not to say" answers default safely.
+      </p>
+      <div class="form-grid risk-grid">
+        {% for feature_name, prompt in risk_question_prompts.items() %}
+          <div class="field-group">
+            <label
+              for="risk_{{ feature_name }}"
+              class="risk-label"
+            >
+              {{ prompt }}
+            </label>
+            <select
+              id="risk_{{ feature_name }}"
+              name="risk_{{ feature_name }}"
+            >
+              <option
+                value="prefer_not_to_say"
+                {% if risk_answers[feature_name] == "prefer_not_to_say" %}
+                selected
+                {% endif %}
+              >
+                Prefer not to say
+              </option>
+              <option
+                value="yes"
+                {% if risk_answers[feature_name] == "yes" %}selected{% endif %}
+              >
+                Yes
+              </option>
+              <option
+                value="no"
+                {% if risk_answers[feature_name] == "no" %}selected{% endif %}
+              >
+                No
+              </option>
+            </select>
+          </div>
+        {% endfor %}
+      </div>
+
+      <div class="form-grid">
+        <div class="field-group">
+          <label for="duration_days">
+            How many days has this been going on?
+          </label>
+          <input
+            id="duration_days"
+            name="duration_days"
+            type="number"
+            min="0"
+            step="1"
+            value="{{ duration_days }}"
+          >
+        </div>
+        <div class="field-group">
+          <label for="self_severity_1_10">How severe is it (1-10)?</label>
+          <input
+            id="self_severity_1_10"
+            name="self_severity_1_10"
+            type="number"
+            min="1"
+            max="10"
+            step="1"
+            value="{{ self_severity_1_10 }}"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="card stack-md">
+      <h2>Understood symptoms</h2>
+      {% if understood_symptoms %}
+        <div class="symptom-grid">
+          {% for symptom_name in understood_symptoms %}
+            <label class="symptom-option">
+              <input
+                type="checkbox"
+                name="selected_symptoms"
+                value="{{ symptom_name }}"
+                checked
+              >
+              <span>{{ symptom_name|humanize_label }}</span>
+            </label>
+          {% endfor %}
+        </div>
+      {% else %}
+        <p>No confident symptom mappings yet.</p>
+      {% endif %}
+    </section>
+
+    <section class="card stack-md">
+      <h2>Unsure mappings</h2>
+      {% if unsure_candidates %}
+        <div class="stack-md">
+          {% for item in unsure_candidates %}
+            <section class="unsure-card">
+              <p>
+                <strong>From text:</strong> "{{ item.source_text }}"
+              </p>
+              <p>{{ item.prompt }}</p>
+              <div class="symptom-grid">
+                {% for candidate in item.canonical_targets %}
+                  <label class="symptom-option">
+                    <input
+                      type="checkbox"
+                      name="selected_symptoms"
+                      value="{{ candidate }}"
+                    >
+                    <span>{{ candidate|humanize_label }}</span>
+                  </label>
+                {% endfor %}
+              </div>
+            </section>
+          {% endfor %}
+        </div>
+      {% else %}
+        <p>No unsure mappings.</p>
+      {% endif %}
+    </section>
+
+    <section class="card stack-sm">
+      <h2>Unmatched tokens (never silently dropped)</h2>
+      {% if unmatched_tokens %}
+        <ul>
+          {% for token in unmatched_tokens %}
+            <li>{{ token }}</li>
+          {% endfor %}
+        </ul>
+      {% else %}
+        <p>No unmatched tokens.</p>
+      {% endif %}
+    </section>
+
+    <button type="submit" class="button-primary">Get triage result</button>
+  </form>
+{% endblock %}

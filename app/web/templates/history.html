@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+{% block title %}Triage Assist - Screening History{% endblock %}
+{% block body_class %}page-history{% endblock %}
+
+{% block content %}
+  <section class="card stack-sm">
+    <h1>Screening history</h1>
+    <p>
+      This view is scoped to screening session IDs held in this browser.
+      No personally identifying information is stored.
+    </p>
+  </section>
+
+  {% if sessions %}
+    <section class="card">
+      <table class="data-table">
+        <thead>
+          <tr>
+            <th>Session ID</th>
+            <th>Created at (UTC)</th>
+            <th>Urgency</th>
+            <th>Point of care</th>
+            <th>Summary</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for item in sessions %}
+            <tr>
+              <td class="mono">{{ item.session_id }}</td>
+              <td>{{ item.created_at }}</td>
+              <td>
+                <span
+                  class="
+                    urgency-badge
+                    urgency-badge-inline
+                    urgency-{{ item.urgency }}
+                  "
+                >
+                  {{ item.urgency|humanize_label }}
+                </span>
+              </td>
+              <td>{{ item.point_of_care|humanize_label }}</td>
+              <td>
+                <a
+                  href="/summary/{{ item.session_id }}"
+                  class="button-secondary button-inline"
+                >
+                  View
+                </a>
+              </td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </section>
+  {% else %}
+    <section class="card">
+      <p>No completed screenings are stored in this browser session yet.</p>
+    </section>
+  {% endif %}
+
+  <p>
+    <a href="/" class="button-primary button-inline">Start a new screening</a>
+  </p>
+{% endblock %}

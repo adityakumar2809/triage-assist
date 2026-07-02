@@ -1,0 +1,19 @@
+............................................................             [100%]
+=============================== warnings summary ===============================
+app/tests/test_web_app.py: 8 warnings
+app/tests/test_web_inference.py: 4 warnings
+  /Users/adityakusingh/Library/CloudStorage/OneDrive-PayPal/Projects/Healthcare-Screening/triage-assist/venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:205: RuntimeWarning: divide by zero encountered in matmul
+    ret = a @ b
+
+app/tests/test_web_app.py: 8 warnings
+app/tests/test_web_inference.py: 4 warnings
+  /Users/adityakusingh/Library/CloudStorage/OneDrive-PayPal/Projects/Healthcare-Screening/triage-assist/venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:205: RuntimeWarning: overflow encountered in matmul
+    ret = a @ b
+
+app/tests/test_web_app.py: 8 warnings
+app/tests/test_web_inference.py: 4 warnings
+  /Users/adityakusingh/Library/CloudStorage/OneDrive-PayPal/Projects/Healthcare-Screening/triage-assist/venv/lib/python3.12/site-packages/sklearn/utils/extmath.py:205: RuntimeWarning: invalid value encountered in matmul
+    ret = a @ b
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+60 passed, 36 warnings in 1.91s

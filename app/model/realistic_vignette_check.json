@@ -1,0 +1,270 @@
+{
+  "note": "Quick behavior sanity check on short 2\u20134 symptom inputs. This is not a clinical validation set.",
+  "summary": {
+    "vignette_count": 10,
+    "top1_match_count": 9,
+    "expected_in_top3_count": 10
+  },
+  "results": [
+    {
+      "id": "skin-01",
+      "symptoms": [
+        "itching",
+        "skin_rash",
+        "nodal_skin_eruptions"
+      ],
+      "expected_category": "Skin & Allergic",
+      "predicted_top1": "Skin & Allergic",
+      "top1_matches_expected": true,
+      "expected_in_top3": true,
+      "top3": [
+        {
+          "category": "Skin & Allergic",
+          "probability": 1.0
+        },
+        {
+          "category": "Infectious & Febrile",
+          "probability": 0.0
+        },
+        {
+          "category": "Cardiovascular",
+          "probability": 0.0
+        }
+      ]
+    },
+    {
+      "id": "gi-01",
+      "symptoms": [
+        "acidity",
+        "abdominal_pain",
+        "indigestion"
+      ],
+      "expected_category": "Gastrointestinal",
+      "predicted_top1": "Gastrointestinal",
+      "top1_matches_expected": true,
+      "expected_in_top3": true,
+      "top3": [
+        {
+          "category": "Gastrointestinal",
+          "probability": 0.998534
+        },
+        {
+          "category": "Neurological",
+          "probability": 0.001464
+        },
+        {
+          "category": "Cardiovascular",
+          "probability": 1e-06
+        }
+      ]
+    },
+    {
+      "id": "hepatic-01",
+      "symptoms": [
+        "yellowish_skin",
+        "dark_urine",
+        "loss_of_appetite"
+      ],
+      "expected_category": "Liver & Hepatic",
+      "predicted_top1": "Liver & Hepatic",
+      "top1_matches_expected": true,
+      "expected_in_top3": true,
+      "top3": [
+        {
+          "category": "Liver & Hepatic",
+          "probability": 0.999951
+        },
+        {
+          "category": "Gastrointestinal",
+          "probability": 4.8e-05
+        },
+        {
+          "category": "Cardiovascular",
+          "probability": 1e-06
+        }
+      ]
+    },
+    {
+      "id": "infectious-01",
+      "symptoms": [
+        "high_fever",
+        "malaise",
+        "chills"
+      ],
+      "expected_category": "Infectious & Febrile",
+      "predicted_top1": "Infectious & Febrile",
+      "top1_matches_expected": true,
+      "expected_in_top3": true,
+      "top3": [
+        {
+          "category": "Infectious & Febrile",
+          "probability": 0.984535
+        },
+        {
+          "category": "Skin & Allergic",
+          "probability": 0.013805
+        },
+        {
+          "category": "Respiratory",
+          "probability": 0.001652
+        }
+      ]
+    },
+    {
+      "id": "respiratory-01",
+      "symptoms": [
+        "cough",
+        "breathlessness",
+        "phlegm"
+      ],
+      "expected_category": "Respiratory",
+      "predicted_top1": "Respiratory",
+      "top1_matches_expected": true,
+      "expected_in_top3": true,
+      "top3": [
+        {
+          "category": "Respiratory",
+          "probability": 0.817507
+        },
+        {
+          "category": "Cardiovascular",
+          "probability": 0.106315
+        },
+        {
+          "category": "Gastrointestinal",
+          "probability": 0.074971
+        }
+      ]
+    },
+    {
+      "id": "cardio-01",
+      "symptoms": [
+        "chest_pain",
+        "palpitations",
+        "sweating"
+      ],
+      "expected_category": "Cardiovascular",
+      "predicted_top1": "Cardiovascular",
+      "top1_matches_expected": true,
+      "expected_in_top3": true,
+      "top3": [
+        {
+          "category": "Cardiovascular",
+          "probability": 0.998288
+        },
+        {
+          "category": "Gastrointestinal",
+          "probability": 0.001651
+        },
+        {
+          "category": "Endocrine & Metabolic",
+          "probability": 3.4e-05
+        }
+      ]
+    },
+    {
+      "id": "neuro-01",
+      "symptoms": [
+        "headache",
+        "dizziness",
+        "loss_of_balance"
+      ],
+      "expected_category": "Neurological",
+      "predicted_top1": "Cardiovascular",
+      "top1_matches_expected": false,
+      "expected_in_top3": true,
+      "top3": [
+        {
+          "category": "Cardiovascular",
+          "probability": 0.976322
+        },
+        {
+          "category": "Neurological",
+          "probability": 0.0195
+        },
+        {
+          "category": "Musculoskeletal",
+          "probability": 0.004177
+        }
+      ]
+    },
+    {
+      "id": "endocrine-01",
+      "symptoms": [
+        "weight_loss",
+        "excessive_hunger",
+        "polyuria"
+      ],
+      "expected_category": "Endocrine & Metabolic",
+      "predicted_top1": "Endocrine & Metabolic",
+      "top1_matches_expected": true,
+      "expected_in_top3": true,
+      "top3": [
+        {
+          "category": "Endocrine & Metabolic",
+          "probability": 0.991499
+        },
+        {
+          "category": "Neurological",
+          "probability": 0.007038
+        },
+        {
+          "category": "Cardiovascular",
+          "probability": 0.000487
+        }
+      ]
+    },
+    {
+      "id": "msk-01",
+      "symptoms": [
+        "joint_pain",
+        "knee_pain",
+        "movement_stiffness"
+      ],
+      "expected_category": "Musculoskeletal",
+      "predicted_top1": "Musculoskeletal",
+      "top1_matches_expected": true,
+      "expected_in_top3": true,
+      "top3": [
+        {
+          "category": "Musculoskeletal",
+          "probability": 0.999937
+        },
+        {
+          "category": "Skin & Allergic",
+          "probability": 6.1e-05
+        },
+        {
+          "category": "Cardiovascular",
+          "probability": 1e-06
+        }
+      ]
+    },
+    {
+      "id": "uro-01",
+      "symptoms": [
+        "burning_micturition",
+        "spotting_urination",
+        "bladder_discomfort"
+      ],
+      "expected_category": "Urological",
+      "predicted_top1": "Urological",
+      "top1_matches_expected": true,
+      "expected_in_top3": true,
+      "top3": [
+        {
+          "category": "Urological",
+          "probability": 0.935981
+        },
+        {
+          "category": "Skin & Allergic",
+          "probability": 0.063993
+        },
+        {
+          "category": "Cardiovascular",
+          "probability": 1.1e-05
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "source": "design_reference/design-bible.md \u00a712.4",
+  "entries": [
+    {
+      "pattern_group": "\"crushing chest pain\", \"chest pressure\", \"tightness in chest\", \"chest pain radiating\" / \"pain to arm/jaw\"",
+      "phrases": [
+        "crushing chest pain",
+        "chest pressure",
+        "tightness in chest",
+        "chest pain radiating",
+        "pain to arm/jaw"
+      ],
+      "emergency_category": "Cardiac"
+    },
+    {
+      "pattern_group": "\"worst headache of my life\", \"thunderclap headache\", \"sudden severe headache\"",
+      "phrases": [
+        "worst headache of my life",
+        "thunderclap headache",
+        "sudden severe headache"
+      ],
+      "emergency_category": "Subarachnoid haemorrhage / stroke"
+    },
+    {
+      "pattern_group": "\"sudden weakness\", \"weakness on one side\", \"face drooping\", \"can't speak\", \"slurred speech\", \"arm went numb\"",
+      "phrases": [
+        "sudden weakness",
+        "weakness on one side",
+        "face drooping",
+        "can't speak",
+        "slurred speech",
+        "arm went numb"
+      ],
+      "emergency_category": "Stroke (FAST)"
+    },
+    {
+      "pattern_group": "\"can't breathe\", \"cannot breathe\", \"struggling to breathe\", \"gasping for air\", \"turning blue\", \"short of breath\", \"can't catch my breath\", \"breathless\"",
+      "phrases": [
+        "can't breathe",
+        "cannot breathe",
+        "struggling to breathe",
+        "gasping for air",
+        "turning blue",
+        "short of breath",
+        "can't catch my breath",
+        "breathless"
+      ],
+      "emergency_category": "Airway / respiratory emergency"
+    },
+    {
+      "pattern_group": "\"throat closing\", \"throat swelling\", \"tongue swelling\", \"lips swelling\", \"swollen lips/tongue\", \"anaphylaxis\", \"anaphylactic\"",
+      "phrases": [
+        "throat closing",
+        "throat swelling",
+        "tongue swelling",
+        "lips swelling",
+        "swollen lips/tongue",
+        "anaphylaxis",
+        "anaphylactic"
+      ],
+      "emergency_category": "Anaphylaxis / airway (satisfies \u00a713.4 Skin/Allergic free-text coverage)"
+    },
+    {
+      "pattern_group": "\"coughing up blood\", \"vomiting blood\", \"throwing up blood\", \"blood in vomit\"",
+      "phrases": [
+        "coughing up blood",
+        "vomiting blood",
+        "throwing up blood",
+        "blood in vomit"
+      ],
+      "emergency_category": "Haemoptysis / haematemesis"
+    },
+    {
+      "pattern_group": "\"black tarry stool\", \"blood in stool\", \"bleeding that won't stop\", \"heavy bleeding\", \"won't stop bleeding\"",
+      "phrases": [
+        "black tarry stool",
+        "blood in stool",
+        "bleeding that won't stop",
+        "heavy bleeding",
+        "won't stop bleeding"
+      ],
+      "emergency_category": "Severe haemorrhage"
+    },
+    {
+      "pattern_group": "\"unconscious\", \"passed out\", \"won't wake up\", \"unresponsive\", \"fainted and not responding\"",
+      "phrases": [
+        "unconscious",
+        "passed out",
+        "won't wake up",
+        "unresponsive",
+        "fainted and not responding"
+      ],
+      "emergency_category": "Loss of consciousness"
+    },
+    {
+      "pattern_group": "\"confused\", \"disoriented\", \"not making sense\", \"very drowsy\", \"hard to wake\", \"altered\"",
+      "phrases": [
+        "confused",
+        "disoriented",
+        "not making sense",
+        "very drowsy",
+        "hard to wake",
+        "altered"
+      ],
+      "emergency_category": "Altered mental status (\u2192 altered_sensorium)"
+    },
+    {
+      "pattern_group": "\"suicidal\", \"want to end my life\", \"kill myself\", \"overdose\", \"took too many pills\", \"self harm\", \"hurt myself\"",
+      "phrases": [
+        "suicidal",
+        "want to end my life",
+        "kill myself",
+        "overdose",
+        "took too many pills",
+        "self harm",
+        "hurt myself"
+      ],
+      "emergency_category": "Self-harm / overdose \u2014 emergency (triggers the crisis-resource message variant, \u00a712.8)"
+    },
+    {
+      "pattern_group": "\"seizure\", \"convulsing\", \"fitting\"",
+      "phrases": [
+        "seizure",
+        "convulsing",
+        "fitting"
+      ],
+      "emergency_category": "Active seizure"
+    },
+    {
+      "pattern_group": "\"stiff neck and fever\", \"rash that won't fade\", \"neck stiffness with fever\"",
+      "phrases": [
+        "stiff neck and fever",
+        "rash that won't fade",
+        "neck stiffness with fever"
+      ],
+      "emergency_category": "Meningitis cluster"
+    },
+    {
+      "pattern_group": "\"severe allergic reaction\", \"allergic and can't breathe\"",
+      "phrases": [
+        "severe allergic reaction",
+        "allergic and can't breathe"
+      ],
+      "emergency_category": "Anaphylaxis"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+Selected model: BernoulliNB
+Random seed: 42
+Test split: 20%
+N classes: 10
+Test samples: 993
+Macro-F1: 1.000000
+
+Classification Report:
+                       precision    recall  f1-score   support
+
+       Cardiovascular       1.00      1.00      1.00        72
+Endocrine & Metabolic       1.00      1.00      1.00        97
+     Gastrointestinal       1.00      1.00      1.00        97
+ Infectious & Febrile       1.00      1.00      1.00       121
+      Liver & Hepatic       1.00      1.00      1.00       194
+      Musculoskeletal       1.00      1.00      1.00        73
+         Neurological       1.00      1.00      1.00        73
+          Respiratory       1.00      1.00      1.00        97
+      Skin & Allergic       1.00      1.00      1.00       145
+           Urological       1.00      1.00      1.00        24
+
+             accuracy                           1.00       993
+            macro avg       1.00      1.00      1.00       993
+         weighted avg       1.00      1.00      1.00       993
+
+
+Confusion Matrix:
+                       Cardiovascular  Endocrine & Metabolic  Gastrointestinal  Infectious & Febrile  Liver & Hepatic  Musculoskeletal  Neurological  Respiratory  Skin & Allergic  Urological
+Cardiovascular                     72                      0                 0                     0                0                0             0            0                0           0
+Endocrine & Metabolic               0                     97                 0                     0                0                0             0            0                0           0
+Gastrointestinal                    0                      0                97                     0                0                0             0            0                0           0
+Infectious & Febrile                0                      0                 0                   121                0                0             0            0                0           0
+Liver & Hepatic                     0                      0                 0                     0              194                0             0            0                0           0
+Musculoskeletal                     0                      0                 0                     0                0               73             0            0                0           0
+Neurological                        0                      0                 0                     0                0                0            73            0                0           0
+Respiratory                         0                      0                 0                     0                0                0             0           97                0           0
+Skin & Allergic                     0                      0                 0                     0                0                0             0            0              145           0
+Urological                          0                      0                 0                     0                0                0             0            0                0          24
+
+CAVEAT: Metrics computed on SymBiPredict 2022 synthetic dataset.
+High accuracy reflects pattern-learning on synthetic generation,
+NOT clinical diagnostic validity. Model is used only as routing signal.

@@ -1,0 +1,1199 @@
+{
+  "source": "design_reference/design-bible.md \u00a74.1",
+  "columns": [
+    {
+      "index": 0,
+      "name": "itching",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 1,
+      "name": "skin_rash",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 2,
+      "name": "nodal_skin_eruptions",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 3,
+      "name": "continuous_sneezing",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 4,
+      "name": "shivering",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 5,
+      "name": "chills",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 6,
+      "name": "joint_pain",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 7,
+      "name": "stomach_pain",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 8,
+      "name": "acidity",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 9,
+      "name": "ulcers_on_tongue",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 10,
+      "name": "muscle_wasting",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 11,
+      "name": "vomiting",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 12,
+      "name": "burning_micturition",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 13,
+      "name": "spotting_urination",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 14,
+      "name": "fatigue",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 15,
+      "name": "weight_gain",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 16,
+      "name": "anxiety",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 17,
+      "name": "cold_hands_and_feet",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 18,
+      "name": "mood_swings",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 19,
+      "name": "weight_loss",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 20,
+      "name": "restlessness",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 21,
+      "name": "lethargy",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 22,
+      "name": "patches_in_throat",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 23,
+      "name": "irregular_sugar_level",
+      "class_tag": "C",
+      "class_kind": "C",
+      "default_zero": true
+    },
+    {
+      "index": 24,
+      "name": "cough",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 25,
+      "name": "high_fever",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 26,
+      "name": "sunken_eyes",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 27,
+      "name": "breathlessness",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 28,
+      "name": "sweating",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 29,
+      "name": "dehydration",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 30,
+      "name": "indigestion",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 31,
+      "name": "headache",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 32,
+      "name": "yellowish_skin",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 33,
+      "name": "dark_urine",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 34,
+      "name": "nausea",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 35,
+      "name": "loss_of_appetite",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 36,
+      "name": "pain_behind_the_eyes",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 37,
+      "name": "back_pain",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 38,
+      "name": "constipation",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 39,
+      "name": "abdominal_pain",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 40,
+      "name": "diarrhoea",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 41,
+      "name": "mild_fever",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 42,
+      "name": "yellow_urine",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 43,
+      "name": "yellowing_of_eyes",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 44,
+      "name": "acute_liver_failure",
+      "class_tag": "C",
+      "class_kind": "C",
+      "default_zero": true
+    },
+    {
+      "index": 45,
+      "name": "fluid_overload",
+      "class_tag": "C",
+      "class_kind": "C",
+      "default_zero": true
+    },
+    {
+      "index": 46,
+      "name": "swelling_of_stomach",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 47,
+      "name": "swelled_lymph_nodes",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 48,
+      "name": "malaise",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 49,
+      "name": "blurred_and_distorted_vision",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 50,
+      "name": "phlegm",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 51,
+      "name": "throat_irritation",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 52,
+      "name": "redness_of_eyes",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 53,
+      "name": "sinus_pressure",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 54,
+      "name": "runny_nose",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 55,
+      "name": "congestion",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 56,
+      "name": "chest_pain",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 57,
+      "name": "weakness_in_limbs",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 58,
+      "name": "fast_heart_rate",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 59,
+      "name": "pain_during_bowel_movements",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 60,
+      "name": "pain_in_anal_region",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 61,
+      "name": "bloody_stool",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 62,
+      "name": "irritation_in_anus",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 63,
+      "name": "neck_pain",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 64,
+      "name": "dizziness",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 65,
+      "name": "cramps",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 66,
+      "name": "bruising",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 67,
+      "name": "obesity",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 68,
+      "name": "swollen_legs",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 69,
+      "name": "swollen_blood_vessels",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 70,
+      "name": "puffy_face_and_eyes",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 71,
+      "name": "enlarged_thyroid",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 72,
+      "name": "brittle_nails",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 73,
+      "name": "swollen_extremities",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 74,
+      "name": "excessive_hunger",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 75,
+      "name": "extra_marital_contacts",
+      "class_tag": "H*",
+      "class_kind": "H",
+      "default_zero": true
+    },
+    {
+      "index": 76,
+      "name": "drying_and_tingling_lips",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 77,
+      "name": "slurred_speech",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 78,
+      "name": "knee_pain",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 79,
+      "name": "hip_joint_pain",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 80,
+      "name": "muscle_weakness",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 81,
+      "name": "stiff_neck",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 82,
+      "name": "swelling_joints",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 83,
+      "name": "movement_stiffness",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 84,
+      "name": "spinning_movements",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 85,
+      "name": "loss_of_balance",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 86,
+      "name": "unsteadiness",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 87,
+      "name": "weakness_of_one_body_side",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 88,
+      "name": "loss_of_smell",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 89,
+      "name": "bladder_discomfort",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 90,
+      "name": "foul_smell_of_urine",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 91,
+      "name": "continuous_feel_of_urine",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 92,
+      "name": "passage_of_gases",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 93,
+      "name": "internal_itching",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 94,
+      "name": "toxic_look_typhos",
+      "class_tag": "C",
+      "class_kind": "C",
+      "default_zero": true
+    },
+    {
+      "index": 95,
+      "name": "depression",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 96,
+      "name": "irritability",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 97,
+      "name": "muscle_pain",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 98,
+      "name": "altered_sensorium",
+      "class_tag": "C",
+      "class_kind": "C",
+      "default_zero": true
+    },
+    {
+      "index": 99,
+      "name": "red_spots_over_body",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 100,
+      "name": "belly_pain",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 101,
+      "name": "abnormal_menstruation",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 102,
+      "name": "dischromic_patches",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 103,
+      "name": "watering_from_eyes",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 104,
+      "name": "increased_appetite",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 105,
+      "name": "polyuria",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 106,
+      "name": "family_history",
+      "class_tag": "H",
+      "class_kind": "H",
+      "default_zero": false
+    },
+    {
+      "index": 107,
+      "name": "mucoid_sputum",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 108,
+      "name": "rusty_sputum",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 109,
+      "name": "lack_of_concentration",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 110,
+      "name": "visual_disturbances",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 111,
+      "name": "receiving_blood_transfusion",
+      "class_tag": "H",
+      "class_kind": "H",
+      "default_zero": false
+    },
+    {
+      "index": 112,
+      "name": "receiving_unsterile_injections",
+      "class_tag": "H",
+      "class_kind": "H",
+      "default_zero": false
+    },
+    {
+      "index": 113,
+      "name": "coma",
+      "class_tag": "C",
+      "class_kind": "C",
+      "default_zero": true
+    },
+    {
+      "index": 114,
+      "name": "stomach_bleeding",
+      "class_tag": "C",
+      "class_kind": "C",
+      "default_zero": true
+    },
+    {
+      "index": 115,
+      "name": "distention_of_abdomen",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 116,
+      "name": "history_of_alcohol_consumption",
+      "class_tag": "H",
+      "class_kind": "H",
+      "default_zero": false
+    },
+    {
+      "index": 117,
+      "name": "blood_in_sputum",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 118,
+      "name": "prominent_veins_on_calf",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 119,
+      "name": "palpitations",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 120,
+      "name": "painful_walking",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 121,
+      "name": "pus_filled_pimples",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 122,
+      "name": "blackheads",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 123,
+      "name": "scurring",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 124,
+      "name": "skin_peeling",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 125,
+      "name": "silver_like_dusting",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 126,
+      "name": "small_dents_in_nails",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 127,
+      "name": "inflammatory_nails",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 128,
+      "name": "blister",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 129,
+      "name": "red_sore_around_nose",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    },
+    {
+      "index": 130,
+      "name": "yellow_crust_ooze",
+      "class_tag": "S",
+      "class_kind": "S",
+      "default_zero": false
+    }
+  ],
+  "order": [
+    "itching",
+    "skin_rash",
+    "nodal_skin_eruptions",
+    "continuous_sneezing",
+    "shivering",
+    "chills",
+    "joint_pain",
+    "stomach_pain",
+    "acidity",
+    "ulcers_on_tongue",
+    "muscle_wasting",
+    "vomiting",
+    "burning_micturition",
+    "spotting_urination",
+    "fatigue",
+    "weight_gain",
+    "anxiety",
+    "cold_hands_and_feet",
+    "mood_swings",
+    "weight_loss",
+    "restlessness",
+    "lethargy",
+    "patches_in_throat",
+    "irregular_sugar_level",
+    "cough",
+    "high_fever",
+    "sunken_eyes",
+    "breathlessness",
+    "sweating",
+    "dehydration",
+    "indigestion",
+    "headache",
+    "yellowish_skin",
+    "dark_urine",
+    "nausea",
+    "loss_of_appetite",
+    "pain_behind_the_eyes",
+    "back_pain",
+    "constipation",
+    "abdominal_pain",
+    "diarrhoea",
+    "mild_fever",
+    "yellow_urine",
+    "yellowing_of_eyes",
+    "acute_liver_failure",
+    "fluid_overload",
+    "swelling_of_stomach",
+    "swelled_lymph_nodes",
+    "malaise",
+    "blurred_and_distorted_vision",
+    "phlegm",
+    "throat_irritation",
+    "redness_of_eyes",
+    "sinus_pressure",
+    "runny_nose",
+    "congestion",
+    "chest_pain",
+    "weakness_in_limbs",
+    "fast_heart_rate",
+    "pain_during_bowel_movements",
+    "pain_in_anal_region",
+    "bloody_stool",
+    "irritation_in_anus",
+    "neck_pain",
+    "dizziness",
+    "cramps",
+    "bruising",
+    "obesity",
+    "swollen_legs",
+    "swollen_blood_vessels",
+    "puffy_face_and_eyes",
+    "enlarged_thyroid",
+    "brittle_nails",
+    "swollen_extremities",
+    "excessive_hunger",
+    "extra_marital_contacts",
+    "drying_and_tingling_lips",
+    "slurred_speech",
+    "knee_pain",
+    "hip_joint_pain",
+    "muscle_weakness",
+    "stiff_neck",
+    "swelling_joints",
+    "movement_stiffness",
+    "spinning_movements",
+    "loss_of_balance",
+    "unsteadiness",
+    "weakness_of_one_body_side",
+    "loss_of_smell",
+    "bladder_discomfort",
+    "foul_smell_of_urine",
+    "continuous_feel_of_urine",
+    "passage_of_gases",
+    "internal_itching",
+    "toxic_look_typhos",
+    "depression",
+    "irritability",
+    "muscle_pain",
+    "altered_sensorium",
+    "red_spots_over_body",
+    "belly_pain",
+    "abnormal_menstruation",
+    "dischromic_patches",
+    "watering_from_eyes",
+    "increased_appetite",
+    "polyuria",
+    "family_history",
+    "mucoid_sputum",
+    "rusty_sputum",
+    "lack_of_concentration",
+    "visual_disturbances",
+    "receiving_blood_transfusion",
+    "receiving_unsterile_injections",
+    "coma",
+    "stomach_bleeding",
+    "distention_of_abdomen",
+    "history_of_alcohol_consumption",
+    "blood_in_sputum",
+    "prominent_veins_on_calf",
+    "palpitations",
+    "painful_walking",
+    "pus_filled_pimples",
+    "blackheads",
+    "scurring",
+    "skin_peeling",
+    "silver_like_dusting",
+    "small_dents_in_nails",
+    "inflammatory_nails",
+    "blister",
+    "red_sore_around_nose",
+    "yellow_crust_ooze"
+  ],
+  "default_zero_features": [
+    "acute_liver_failure",
+    "altered_sensorium",
+    "coma",
+    "extra_marital_contacts",
+    "fluid_overload",
+    "irregular_sugar_level",
+    "stomach_bleeding",
+    "toxic_look_typhos"
+  ],
+  "raw_header_aliases": {
+    "abdominal_pain": "abdominal_pain",
+    "abnormal_menstruation": "abnormal_menstruation",
+    "acidity": "acidity",
+    "acute_liver_failure": "acute_liver_failure",
+    "altered_sensorium": "altered_sensorium",
+    "anxiety": "anxiety",
+    "back_pain": "back_pain",
+    "belly_pain": "belly_pain",
+    "blackheads": "blackheads",
+    "bladder_discomfort": "bladder_discomfort",
+    "blister": "blister",
+    "blood_in_sputum": "blood_in_sputum",
+    "bloody_stool": "bloody_stool",
+    "blurred_and_distorted_vision": "blurred_and_distorted_vision",
+    "breathlessness": "breathlessness",
+    "brittle_nails": "brittle_nails",
+    "bruising": "bruising",
+    "burning_micturition": "burning_micturition",
+    "chest_pain": "chest_pain",
+    "chills": "chills",
+    "cold_hands_and_feets": "cold_hands_and_feet",
+    "coma": "coma",
+    "congestion": "congestion",
+    "constipation": "constipation",
+    "continuous_feel_of_urine": "continuous_feel_of_urine",
+    "continuous_sneezing": "continuous_sneezing",
+    "cough": "cough",
+    "cramps": "cramps",
+    "dark_urine": "dark_urine",
+    "dehydration": "dehydration",
+    "depression": "depression",
+    "diarrhoea": "diarrhoea",
+    "dischromic _patches": "dischromic_patches",
+    "distention_of_abdomen": "distention_of_abdomen",
+    "dizziness": "dizziness",
+    "drying_and_tingling_lips": "drying_and_tingling_lips",
+    "enlarged_thyroid": "enlarged_thyroid",
+    "excessive_hunger": "excessive_hunger",
+    "extra_marital_contacts": "extra_marital_contacts",
+    "family_history": "family_history",
+    "fast_heart_rate": "fast_heart_rate",
+    "fatigue": "fatigue",
+    "fluid_overload": "fluid_overload",
+    "fluid_overload.1": "fluid_overload",
+    "foul_smell_of urine": "foul_smell_of_urine",
+    "headache": "headache",
+    "high_fever": "high_fever",
+    "hip_joint_pain": "hip_joint_pain",
+    "history_of_alcohol_consumption": "history_of_alcohol_consumption",
+    "increased_appetite": "increased_appetite",
+    "indigestion": "indigestion",
+    "inflammatory_nails": "inflammatory_nails",
+    "internal_itching": "internal_itching",
+    "irregular_sugar_level": "irregular_sugar_level",
+    "irritability": "irritability",
+    "irritation_in_anus": "irritation_in_anus",
+    "itching": "itching",
+    "joint_pain": "joint_pain",
+    "knee_pain": "knee_pain",
+    "lack_of_concentration": "lack_of_concentration",
+    "lethargy": "lethargy",
+    "loss_of_appetite": "loss_of_appetite",
+    "loss_of_balance": "loss_of_balance",
+    "loss_of_smell": "loss_of_smell",
+    "malaise": "malaise",
+    "mild_fever": "mild_fever",
+    "mood_swings": "mood_swings",
+    "movement_stiffness": "movement_stiffness",
+    "mucoid_sputum": "mucoid_sputum",
+    "muscle_pain": "muscle_pain",
+    "muscle_wasting": "muscle_wasting",
+    "muscle_weakness": "muscle_weakness",
+    "nausea": "nausea",
+    "neck_pain": "neck_pain",
+    "nodal_skin_eruptions": "nodal_skin_eruptions",
+    "obesity": "obesity",
+    "pain_behind_the_eyes": "pain_behind_the_eyes",
+    "pain_during_bowel_movements": "pain_during_bowel_movements",
+    "pain_in_anal_region": "pain_in_anal_region",
+    "painful_walking": "painful_walking",
+    "palpitations": "palpitations",
+    "passage_of_gases": "passage_of_gases",
+    "patches_in_throat": "patches_in_throat",
+    "phlegm": "phlegm",
+    "polyuria": "polyuria",
+    "prominent_veins_on_calf": "prominent_veins_on_calf",
+    "puffy_face_and_eyes": "puffy_face_and_eyes",
+    "pus_filled_pimples": "pus_filled_pimples",
+    "receiving_blood_transfusion": "receiving_blood_transfusion",
+    "receiving_unsterile_injections": "receiving_unsterile_injections",
+    "red_sore_around_nose": "red_sore_around_nose",
+    "red_spots_over_body": "red_spots_over_body",
+    "redness_of_eyes": "redness_of_eyes",
+    "restlessness": "restlessness",
+    "runny_nose": "runny_nose",
+    "rusty_sputum": "rusty_sputum",
+    "scurring": "scurring",
+    "shivering": "shivering",
+    "silver_like_dusting": "silver_like_dusting",
+    "sinus_pressure": "sinus_pressure",
+    "skin_peeling": "skin_peeling",
+    "skin_rash": "skin_rash",
+    "slurred_speech": "slurred_speech",
+    "small_dents_in_nails": "small_dents_in_nails",
+    "spinning_movements": "spinning_movements",
+    "spotting_ urination": "spotting_urination",
+    "stiff_neck": "stiff_neck",
+    "stomach_bleeding": "stomach_bleeding",
+    "stomach_pain": "stomach_pain",
+    "sunken_eyes": "sunken_eyes",
+    "sweating": "sweating",
+    "swelled_lymph_nodes": "swelled_lymph_nodes",
+    "swelling_joints": "swelling_joints",
+    "swelling_of_stomach": "swelling_of_stomach",
+    "swollen_blood_vessels": "swollen_blood_vessels",
+    "swollen_extremeties": "swollen_extremities",
+    "swollen_legs": "swollen_legs",
+    "throat_irritation": "throat_irritation",
+    "toxic_look_(typhos)": "toxic_look_typhos",
+    "ulcers_on_tongue": "ulcers_on_tongue",
+    "unsteadiness": "unsteadiness",
+    "visual_disturbances": "visual_disturbances",
+    "vomiting": "vomiting",
+    "watering_from_eyes": "watering_from_eyes",
+    "weakness_in_limbs": "weakness_in_limbs",
+    "weakness_of_one_body_side": "weakness_of_one_body_side",
+    "weight_gain": "weight_gain",
+    "weight_loss": "weight_loss",
+    "yellow_crust_ooze": "yellow_crust_ooze",
+    "yellow_urine": "yellow_urine",
+    "yellowing_of_eyes": "yellowing_of_eyes",
+    "yellowish_skin": "yellowish_skin"
+  }
+}
