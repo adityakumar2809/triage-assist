@@ -443,6 +443,7 @@ def test_result_persists_screening_and_history_view(
     history_body = history_response.get_data(as_text=True)
     assert screening_session_id in history_body
     assert "low" in history_body
+    assert 'class="data-table-scroll"' in history_body
 
     with sqlite3.connect(db_path) as connection:
         screening_count = connection.execute(

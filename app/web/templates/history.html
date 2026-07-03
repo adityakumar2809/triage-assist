@@ -14,45 +14,47 @@
 
   {% if sessions %}
     <section class="card">
-      <table class="data-table">
-        <thead>
-          <tr>
-            <th>Session ID</th>
-            <th>Created at (UTC)</th>
-            <th>Urgency</th>
-            <th>Point of care</th>
-            <th>Summary</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for item in sessions %}
+      <div class="data-table-scroll">
+        <table class="data-table">
+          <thead>
             <tr>
-              <td class="mono">{{ item.session_id }}</td>
-              <td>{{ item.created_at }}</td>
-              <td>
-                <span
-                  class="
-                    urgency-badge
-                    urgency-badge-inline
-                    urgency-{{ item.urgency }}
-                  "
-                >
-                  {{ item.urgency|humanize_label }}
-                </span>
-              </td>
-              <td>{{ item.point_of_care|humanize_label }}</td>
-              <td>
-                <a
-                  href="/summary/{{ item.session_id }}"
-                  class="button-secondary button-inline"
-                >
-                  View
-                </a>
-              </td>
+              <th>Session ID</th>
+              <th>Created at (UTC)</th>
+              <th>Urgency</th>
+              <th>Point of care</th>
+              <th>Summary</th>
             </tr>
-          {% endfor %}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {% for item in sessions %}
+              <tr>
+                <td class="mono">{{ item.session_id }}</td>
+                <td>{{ item.created_at }}</td>
+                <td>
+                  <span
+                    class="
+                      urgency-badge
+                      urgency-badge-inline
+                      urgency-{{ item.urgency }}
+                    "
+                  >
+                    {{ item.urgency|humanize_label }}
+                  </span>
+                </td>
+                <td>{{ item.point_of_care|humanize_label }}</td>
+                <td>
+                  <a
+                    href="/summary/{{ item.session_id }}"
+                    class="button-secondary button-inline"
+                  >
+                    View
+                  </a>
+                </td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
     </section>
   {% else %}
     <section class="card">

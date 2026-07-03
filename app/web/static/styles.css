@@ -637,6 +637,17 @@ button,
   font-size: 0.95rem;
 }
 
+.data-table-scroll {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.data-table-scroll .data-table {
+  max-width: 680px;
+}
+
 .data-table th,
 .data-table td {
   text-align: left;
